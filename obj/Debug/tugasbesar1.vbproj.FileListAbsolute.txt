@@ -1,0 +1,14 @@
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\bin\Debug\tugasbesar1.exe.config
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\bin\Debug\tugasbesar1.exe
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\bin\Debug\tugasbesar1.pdb
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\bin\Debug\tugasbesar1.xml
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\bin\Debug\Guna.UI2.dll
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.vbproj.AssemblyReference.cache
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.Form1.resources
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.Resources.resources
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.vbproj.GenerateResource.cache
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.vbproj.CoreCompileInputs.cache
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.vbproj.CopyComplete
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.exe
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.xml
+C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.pdb
