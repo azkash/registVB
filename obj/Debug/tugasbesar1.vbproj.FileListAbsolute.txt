@@ -1,0 +1,14 @@
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\tugasbesar1.exe.config
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\tugasbesar1.exe
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\tugasbesar1.pdb
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\tugasbesar1.xml
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\Guna.UI2.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.vbproj.AssemblyReference.cache
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.Form1.resources
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.Resources.resources
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.vbproj.GenerateResource.cache
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.vbproj.CoreCompileInputs.cache
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbes.8C8D3E7D.Up2Date
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.exe
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.xml
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.pdb
