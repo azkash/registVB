@@ -44,7 +44,7 @@ Partial Class Form2
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 25)
+        Me.Label1.Size = New System.Drawing.Size(59, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nama"
         '
@@ -98,7 +98,7 @@ Partial Class Form2
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label2.Location = New System.Drawing.Point(411, 4)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 25)
+        Me.Label2.Size = New System.Drawing.Size(59, 25)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Nama"
         '
@@ -122,7 +122,7 @@ Partial Class Form2
         Me.RadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.RadioButton2.Location = New System.Drawing.Point(165, 43)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(138, 30)
+        Me.RadioButton2.Size = New System.Drawing.Size(131, 30)
         Me.RadioButton2.TabIndex = 1
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Perempuan"
@@ -134,7 +134,7 @@ Partial Class Form2
         Me.RadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.RadioButton1.Location = New System.Drawing.Point(13, 43)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(113, 30)
+        Me.RadioButton1.Size = New System.Drawing.Size(107, 30)
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Laki Laki"

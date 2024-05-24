@@ -24,61 +24,63 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.SlidingPanel = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button_Logout = New System.Windows.Forms.Button()
+        Me.Button_Menu = New System.Windows.Forms.Button()
+        Me.Button_Utama = New System.Windows.Forms.Button()
         Me.ImagePanel = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.HeaderSlidingPanel = New System.Windows.Forms.Panel()
         Me.BtnSlidingMenu = New System.Windows.Forms.Button()
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TabControl = New Guna.UI2.WinForms.Guna2TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button_Print = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button_Delete = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button_Edit = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button_Search = New Guna.UI2.WinForms.Guna2Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox_Search = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button_Cancel = New System.Windows.Forms.Button()
+        Me.Button_Save = New System.Windows.Forms.Button()
+        Me.TextBox_TTL = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton_L = New System.Windows.Forms.RadioButton()
+        Me.RadioButton_P = New System.Windows.Forms.RadioButton()
+        Me.TextBox_Alamat = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox_Nama = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.HeaderMainPanel = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TabControl1 = New Guna.UI2.WinForms.Guna2TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Button5 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Button6 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Button7 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.SlidingPanel.SuspendLayout()
         Me.ImagePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.HeaderSlidingPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.HeaderMainPanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
+        Me.TabControl.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.HeaderMainPanel.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SlidingPanel
         '
         Me.SlidingPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.SlidingPanel.Controls.Add(Me.Button3)
-        Me.SlidingPanel.Controls.Add(Me.Button2)
-        Me.SlidingPanel.Controls.Add(Me.Button1)
+        Me.SlidingPanel.Controls.Add(Me.Button_Logout)
+        Me.SlidingPanel.Controls.Add(Me.Button_Menu)
+        Me.SlidingPanel.Controls.Add(Me.Button_Utama)
         Me.SlidingPanel.Controls.Add(Me.ImagePanel)
         Me.SlidingPanel.Controls.Add(Me.HeaderSlidingPanel)
         Me.SlidingPanel.Dock = System.Windows.Forms.DockStyle.Left
@@ -87,53 +89,53 @@ Partial Class Form1
         Me.SlidingPanel.Size = New System.Drawing.Size(250, 636)
         Me.SlidingPanel.TabIndex = 0
         '
-        'Button3
+        'Button_Logout
         '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button3.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button3.Image = Global.tugasbesar1.My.Resources.Resources.icons8_power_25
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(0, 400)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(250, 50)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Log out"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button_Logout.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button_Logout.FlatAppearance.BorderSize = 0
+        Me.Button_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_Logout.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_Logout.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Button_Logout.Image = Global.tugasbesar1.My.Resources.Resources.icons8_power_25
+        Me.Button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button_Logout.Location = New System.Drawing.Point(0, 400)
+        Me.Button_Logout.Name = "Button_Logout"
+        Me.Button_Logout.Size = New System.Drawing.Size(250, 50)
+        Me.Button_Logout.TabIndex = 4
+        Me.Button_Logout.Text = "Log out"
+        Me.Button_Logout.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Button_Menu
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button2.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button2.Image = Global.tugasbesar1.My.Resources.Resources.icons8_mail_25
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(0, 350)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(250, 50)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Menu"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button_Menu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button_Menu.FlatAppearance.BorderSize = 0
+        Me.Button_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_Menu.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_Menu.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Button_Menu.Image = Global.tugasbesar1.My.Resources.Resources.icons8_mail_25
+        Me.Button_Menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button_Menu.Location = New System.Drawing.Point(0, 350)
+        Me.Button_Menu.Name = "Button_Menu"
+        Me.Button_Menu.Size = New System.Drawing.Size(250, 50)
+        Me.Button_Menu.TabIndex = 3
+        Me.Button_Menu.Text = "Menu"
+        Me.Button_Menu.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Button_Utama
         '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button1.Image = Global.tugasbesar1.My.Resources.Resources.icons8_home_25
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(0, 300)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(250, 50)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Utama"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button_Utama.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button_Utama.FlatAppearance.BorderSize = 0
+        Me.Button_Utama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_Utama.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_Utama.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Button_Utama.Image = Global.tugasbesar1.My.Resources.Resources.icons8_home_25
+        Me.Button_Utama.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button_Utama.Location = New System.Drawing.Point(0, 300)
+        Me.Button_Utama.Name = "Button_Utama"
+        Me.Button_Utama.Size = New System.Drawing.Size(250, 50)
+        Me.Button_Utama.TabIndex = 2
+        Me.Button_Utama.Text = "Utama"
+        Me.Button_Utama.UseVisualStyleBackColor = True
         '
         'ImagePanel
         '
@@ -198,6 +200,293 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(898, 586)
         Me.Panel1.TabIndex = 1
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Controls.Add(Me.TabControl)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(898, 586)
+        Me.Panel3.TabIndex = 2
+        '
+        'TabControl
+        '
+        Me.TabControl.Alignment = System.Windows.Forms.TabAlignment.Left
+        Me.TabControl.Controls.Add(Me.TabPage1)
+        Me.TabControl.Controls.Add(Me.TabPage2)
+        Me.TabControl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabControl.ItemSize = New System.Drawing.Size(180, 40)
+        Me.TabControl.Location = New System.Drawing.Point(0, 0)
+        Me.TabControl.Name = "TabControl"
+        Me.TabControl.SelectedIndex = 0
+        Me.TabControl.Size = New System.Drawing.Size(898, 586)
+        Me.TabControl.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
+        Me.TabControl.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.TabControl.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
+        Me.TabControl.TabButtonHoverState.ForeColor = System.Drawing.Color.White
+        Me.TabControl.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.TabControl.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty
+        Me.TabControl.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.TabControl.TabButtonIdleState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
+        Me.TabControl.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.TabControl.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.TabControl.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty
+        Me.TabControl.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.TabControl.TabButtonSelectedState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
+        Me.TabControl.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
+        Me.TabControl.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TabControl.TabButtonSize = New System.Drawing.Size(180, 40)
+        Me.TabControl.TabIndex = 2
+        Me.TabControl.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.Button_Print)
+        Me.TabPage1.Controls.Add(Me.Button_Delete)
+        Me.TabPage1.Controls.Add(Me.Button_Edit)
+        Me.TabPage1.Controls.Add(Me.Button_Search)
+        Me.TabPage1.Controls.Add(Me.DataGridView1)
+        Me.TabPage1.Controls.Add(Me.TextBox_Search)
+        Me.TabPage1.Controls.Add(Me.Label2)
+        Me.TabPage1.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(710, 578)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Lihat data"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Button_Print
+        '
+        Me.Button_Print.BorderRadius = 6
+        Me.Button_Print.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Print.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Print.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Print.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Print.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button_Print.ForeColor = System.Drawing.Color.White
+        Me.Button_Print.Location = New System.Drawing.Point(566, 129)
+        Me.Button_Print.Name = "Button_Print"
+        Me.Button_Print.Size = New System.Drawing.Size(86, 35)
+        Me.Button_Print.TabIndex = 6
+        Me.Button_Print.Text = "Print"
+        '
+        'Button_Delete
+        '
+        Me.Button_Delete.BorderRadius = 6
+        Me.Button_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Delete.FillColor = System.Drawing.Color.Red
+        Me.Button_Delete.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button_Delete.ForeColor = System.Drawing.Color.White
+        Me.Button_Delete.Location = New System.Drawing.Point(566, 170)
+        Me.Button_Delete.Name = "Button_Delete"
+        Me.Button_Delete.Size = New System.Drawing.Size(86, 35)
+        Me.Button_Delete.TabIndex = 5
+        Me.Button_Delete.Text = "Delete"
+        '
+        'Button_Edit
+        '
+        Me.Button_Edit.BorderRadius = 6
+        Me.Button_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Edit.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button_Edit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button_Edit.ForeColor = System.Drawing.Color.White
+        Me.Button_Edit.Location = New System.Drawing.Point(566, 88)
+        Me.Button_Edit.Name = "Button_Edit"
+        Me.Button_Edit.Size = New System.Drawing.Size(86, 35)
+        Me.Button_Edit.TabIndex = 4
+        Me.Button_Edit.Text = "Edit"
+        '
+        'Button_Search
+        '
+        Me.Button_Search.BorderRadius = 6
+        Me.Button_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Search.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Button_Search.ForeColor = System.Drawing.Color.White
+        Me.Button_Search.Location = New System.Drawing.Point(474, 46)
+        Me.Button_Search.Name = "Button_Search"
+        Me.Button_Search.Size = New System.Drawing.Size(86, 35)
+        Me.Button_Search.TabIndex = 3
+        Me.Button_Search.Text = "Search"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(22, 88)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(538, 412)
+        Me.DataGridView1.TabIndex = 2
+        '
+        'TextBox_Search
+        '
+        Me.TextBox_Search.BackColor = System.Drawing.Color.White
+        Me.TextBox_Search.BorderRadius = 7
+        Me.TextBox_Search.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBox_Search.DefaultText = ""
+        Me.TextBox_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TextBox_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TextBox_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox_Search.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TextBox_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox_Search.Location = New System.Drawing.Point(22, 46)
+        Me.TextBox_Search.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TextBox_Search.Name = "TextBox_Search"
+        Me.TextBox_Search.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TextBox_Search.PlaceholderText = ""
+        Me.TextBox_Search.SelectedText = ""
+        Me.TextBox_Search.Size = New System.Drawing.Size(446, 35)
+        Me.TextBox_Search.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(18, 19)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(91, 23)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Search For"
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.DataGridView2)
+        Me.TabPage2.Controls.Add(Me.Button_Cancel)
+        Me.TabPage2.Controls.Add(Me.Button_Save)
+        Me.TabPage2.Controls.Add(Me.TextBox_TTL)
+        Me.TabPage2.Controls.Add(Me.Label5)
+        Me.TabPage2.Controls.Add(Me.GroupBox1)
+        Me.TabPage2.Controls.Add(Me.TextBox_Alamat)
+        Me.TabPage2.Controls.Add(Me.Label4)
+        Me.TabPage2.Controls.Add(Me.TextBox_Nama)
+        Me.TabPage2.Controls.Add(Me.Label3)
+        Me.TabPage2.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(710, 578)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Tambah data"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Button_Cancel
+        '
+        Me.Button_Cancel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Cancel.Location = New System.Drawing.Point(241, 216)
+        Me.Button_Cancel.Name = "Button_Cancel"
+        Me.Button_Cancel.Size = New System.Drawing.Size(123, 30)
+        Me.Button_Cancel.TabIndex = 10
+        Me.Button_Cancel.Text = "Cancel"
+        Me.Button_Cancel.UseVisualStyleBackColor = True
+        '
+        'Button_Save
+        '
+        Me.Button_Save.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Save.Location = New System.Drawing.Point(87, 216)
+        Me.Button_Save.Name = "Button_Save"
+        Me.Button_Save.Size = New System.Drawing.Size(123, 30)
+        Me.Button_Save.TabIndex = 9
+        Me.Button_Save.Text = "Save"
+        Me.Button_Save.UseVisualStyleBackColor = True
+        '
+        'TextBox_TTL
+        '
+        Me.TextBox_TTL.Location = New System.Drawing.Point(241, 40)
+        Me.TextBox_TTL.Name = "TextBox_TTL"
+        Me.TextBox_TTL.Size = New System.Drawing.Size(200, 22)
+        Me.TextBox_TTL.TabIndex = 8
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(237, 14)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(172, 23)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Tempat, Tanggal lahir"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RadioButton_L)
+        Me.GroupBox1.Controls.Add(Me.RadioButton_P)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(10, 74)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Jenis Kelamin"
+        '
+        'RadioButton_L
+        '
+        Me.RadioButton_L.AutoSize = True
+        Me.RadioButton_L.Location = New System.Drawing.Point(17, 29)
+        Me.RadioButton_L.Name = "RadioButton_L"
+        Me.RadioButton_L.Size = New System.Drawing.Size(94, 27)
+        Me.RadioButton_L.TabIndex = 4
+        Me.RadioButton_L.TabStop = True
+        Me.RadioButton_L.Text = "Laki-laki"
+        Me.RadioButton_L.UseVisualStyleBackColor = True
+        '
+        'RadioButton_P
+        '
+        Me.RadioButton_P.AutoSize = True
+        Me.RadioButton_P.Location = New System.Drawing.Point(17, 56)
+        Me.RadioButton_P.Name = "RadioButton_P"
+        Me.RadioButton_P.Size = New System.Drawing.Size(118, 27)
+        Me.RadioButton_P.TabIndex = 5
+        Me.RadioButton_P.TabStop = True
+        Me.RadioButton_P.Text = "Perempuan"
+        Me.RadioButton_P.UseVisualStyleBackColor = True
+        '
+        'TextBox_Alamat
+        '
+        Me.TextBox_Alamat.Location = New System.Drawing.Point(241, 112)
+        Me.TextBox_Alamat.Multiline = True
+        Me.TextBox_Alamat.Name = "TextBox_Alamat"
+        Me.TextBox_Alamat.Size = New System.Drawing.Size(200, 62)
+        Me.TextBox_Alamat.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(237, 86)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(64, 23)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Alamat"
+        '
+        'TextBox_Nama
+        '
+        Me.TextBox_Nama.Location = New System.Drawing.Point(10, 40)
+        Me.TextBox_Nama.Name = "TextBox_Nama"
+        Me.TextBox_Nama.Size = New System.Drawing.Size(200, 22)
+        Me.TextBox_Nama.TabIndex = 1
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(6, 14)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(56, 23)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Nama"
+        '
         'HeaderMainPanel
         '
         Me.HeaderMainPanel.BackColor = System.Drawing.Color.LightSeaGreen
@@ -212,11 +501,11 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Adobe Gothic Std B", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(119, 25)
+        Me.Label1.Size = New System.Drawing.Size(141, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "REGISTRASI"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -225,291 +514,15 @@ Partial Class Form1
         '
         Me.Timer1.Interval = 10
         '
-        'Panel3
+        'DataGridView2
         '
-        Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.Controls.Add(Me.TabControl1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(898, 586)
-        Me.Panel3.TabIndex = 2
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.ItemSize = New System.Drawing.Size(180, 40)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(898, 586)
-        Me.TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
-        Me.TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
-        Me.TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White
-        Me.TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty
-        Me.TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.TabControl1.TabButtonIdleState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
-        Me.TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty
-        Me.TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.TabControl1.TabButtonSelectedState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
-        Me.TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
-        Me.TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TabControl1.TabButtonSize = New System.Drawing.Size(180, 40)
-        Me.TabControl1.TabIndex = 2
-        Me.TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.Button7)
-        Me.TabPage1.Controls.Add(Me.Button6)
-        Me.TabPage1.Controls.Add(Me.Button5)
-        Me.TabPage1.Controls.Add(Me.Button4)
-        Me.TabPage1.Controls.Add(Me.DataGridView1)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
-        Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Location = New System.Drawing.Point(184, 4)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(710, 578)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Lihat data"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.Button9)
-        Me.TabPage2.Controls.Add(Me.Button8)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
-        Me.TabPage2.Controls.Add(Me.Label5)
-        Me.TabPage2.Controls.Add(Me.GroupBox1)
-        Me.TabPage2.Controls.Add(Me.TextBox3)
-        Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Controls.Add(Me.TextBox2)
-        Me.TabPage2.Controls.Add(Me.Label3)
-        Me.TabPage2.Location = New System.Drawing.Point(184, 4)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(710, 578)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Tambah data"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(18, 19)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 23)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Search For"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.BorderRadius = 7
-        Me.TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBox1.DefaultText = ""
-        Me.TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(22, 46)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TextBox1.PlaceholderText = ""
-        Me.TextBox1.SelectedText = ""
-        Me.TextBox1.Size = New System.Drawing.Size(446, 35)
-        Me.TextBox1.TabIndex = 1
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 88)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(538, 412)
-        Me.DataGridView1.TabIndex = 2
-        '
-        'Button4
-        '
-        Me.Button4.BorderRadius = 6
-        Me.Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(474, 46)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(86, 35)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Search"
-        '
-        'Button5
-        '
-        Me.Button5.BorderRadius = 6
-        Me.Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button5.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(566, 88)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(86, 35)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Edit"
-        '
-        'Button6
-        '
-        Me.Button6.BorderRadius = 6
-        Me.Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button6.FillColor = System.Drawing.Color.Red
-        Me.Button6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(566, 170)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(86, 35)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "Delete"
-        '
-        'Button7
-        '
-        Me.Button7.BorderRadius = 6
-        Me.Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(566, 129)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(86, 35)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "Cetak"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 14)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 23)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Nama"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(10, 40)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox2.TabIndex = 1
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(241, 112)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 62)
-        Me.TextBox3.TabIndex = 3
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(237, 86)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 23)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Alamat"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(17, 29)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(94, 27)
-        Me.RadioButton1.TabIndex = 4
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Laki-laki"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(17, 56)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(118, 27)
-        Me.RadioButton2.TabIndex = 5
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Perempuan"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(10, 74)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox1.TabIndex = 6
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Jenis Kelamin"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(241, 40)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox4.TabIndex = 8
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(237, 14)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(172, 23)
-        Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Tempat, Tanggal lahir"
-        '
-        'Button8
-        '
-        Me.Button8.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(87, 216)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(123, 30)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "Save"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(241, 216)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(123, 30)
-        Me.Button9.TabIndex = 10
-        Me.Button9.Text = "Cancel"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(10, 272)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.RowTemplate.Height = 24
+        Me.DataGridView2.Size = New System.Drawing.Size(538, 274)
+        Me.DataGridView2.TabIndex = 11
         '
         'Form1
         '
@@ -529,17 +542,18 @@ Partial Class Form1
         Me.HeaderSlidingPanel.ResumeLayout(False)
         Me.MainPanel.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        Me.HeaderMainPanel.ResumeLayout(False)
-        Me.HeaderMainPanel.PerformLayout()
         Me.Panel3.ResumeLayout(False)
-        Me.TabControl1.ResumeLayout(False)
+        Me.TabControl.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.HeaderMainPanel.ResumeLayout(False)
+        Me.HeaderMainPanel.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -551,32 +565,33 @@ Partial Class Form1
     Friend WithEvents HeaderMainPanel As Panel
     Friend WithEvents ImagePanel As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button_Utama As Button
+    Friend WithEvents Button_Logout As Button
+    Friend WithEvents Button_Menu As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents TabControl1 As Guna.UI2.WinForms.Guna2TabControl
+    Friend WithEvents TabControl As Guna.UI2.WinForms.Guna2TabControl
     Friend WithEvents TabPage2 As TabPage
     Public WithEvents TabPage1 As TabPage
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents TextBox_Search As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button4 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Button7 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Button6 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Button5 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Button_Search As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Button_Print As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Button_Delete As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Button_Edit As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents RadioButton_L As RadioButton
+    Friend WithEvents RadioButton_P As RadioButton
+    Friend WithEvents TextBox_Alamat As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox_Nama As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Button_Cancel As Button
+    Friend WithEvents Button_Save As Button
+    Friend WithEvents TextBox_TTL As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents DataGridView2 As DataGridView
 End Class
