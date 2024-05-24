@@ -39,4 +39,24 @@
             End If
         End If
     End Sub
+
+    Private Sub MainPanel_Paint(sender As Object, e As PaintEventArgs) Handles MainPanel.Paint
+
+    End Sub
+
+    Private Sub HeaderMainPanel_Paint(sender As Object, e As PaintEventArgs) Handles HeaderMainPanel.Paint
+
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+
+    End Sub
 End Class

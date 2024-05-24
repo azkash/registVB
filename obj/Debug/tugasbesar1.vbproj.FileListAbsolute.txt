@@ -12,3 +12,32 @@ C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.vbproj.Co
 C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.exe
 C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.xml
 C:\Users\AZKA NUR FADEL\source\repos\tugasbesar1\obj\Debug\tugasbesar1.pdb
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\bin\Debug\tugasbesar1.exe.config
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\bin\Debug\tugasbesar1.exe
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\bin\Debug\tugasbesar1.pdb
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\bin\Debug\tugasbesar1.xml
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\bin\Debug\Guna.UI2.dll
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.vbproj.AssemblyReference.cache
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.Form1.resources
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.Resources.resources
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.vbproj.GenerateResource.cache
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.vbproj.CoreCompileInputs.cache
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.vbproj.CopyComplete
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.exe
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.xml
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\tugasbesar1\obj\Debug\tugasbesar1.pdb
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\bin\Debug\tugasbesar1.exe.config
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\bin\Debug\tugasbesar1.exe
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\bin\Debug\tugasbesar1.pdb
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\bin\Debug\tugasbesar1.xml
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\bin\Debug\Guna.UI2.dll
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.vbproj.AssemblyReference.cache
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.Form1.resources
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.Resources.resources
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.vbproj.GenerateResource.cache
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.vbproj.CoreCompileInputs.cache
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.vbproj.CopyComplete
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.exe
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.xml
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.pdb
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\copy_tugasbesar\obj\Debug\tugasbesar1.Form2.resources
