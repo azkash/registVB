@@ -132,101 +132,20 @@ Public Class Form1
     End Sub
 
     ' Function to load patient data
-    Private Sub LoadData()
-        Try
-            If conn.State = ConnectionState.Open Then
-                conn.Close()
-            End If
-            conn.Open()
-            Dim query As String = "SELECT * FROM pasien"
-            Dim cmd As New MySqlCommand(query, conn)
-            Dim adapter As New MySqlDataAdapter(cmd)
-            Dim table As New DataTable()
-            adapter.Fill(table)
-            DataGridView1.DataSource = table
-        Catch ex As MySqlException
-            MessageBox.Show("Terjadi kesalahan: " & ex.Message)
-        Finally
-            If conn.State = ConnectionState.Open Then
-                conn.Close()
-            End If
-        End Try
+    Sub switchPanel(ByVal panel As Form)
+        Panel3.Controls.Clear()
+        panel.TopLevel = False
+        Panel3.Controls.Add(panel)
+        panel.Show()
     End Sub
 
-    ' Function to save or update patient data
-    Private Sub SavePatient()
-        If String.IsNullOrEmpty(TextBox_Nama.Text) OrElse String.IsNullOrEmpty(TextBox_TTL.Text) OrElse String.IsNullOrEmpty(TextBox_Alamat.Text) Then
-            MessageBox.Show("Mohon isi semua data.")
-            Return
-        End If
-
-        Try
-            If conn.State = ConnectionState.Closed Then
-                conn.Open()
-            End If
-
-            ' Periksa apakah data sudah ada (mode edit) atau data baru (mode tambah)
-            Dim query As String
-            If DataGridView1.SelectedRows.Count > 0 Then
-                query = "UPDATE pasien SET nama = @nama, ttl = @ttl, gender = @gender, alamat = @alamat WHERE id = @id"
-            Else
-                query = "INSERT INTO pasien (nama, ttl, gender, alamat) VALUES (@nama, @ttl, @gender, @alamat)"
-            End If
-
-            Dim cmd As New MySqlCommand(query, conn)
-            cmd.Parameters.AddWithValue("@nama", TextBox_Nama.Text)
-            cmd.Parameters.AddWithValue("@ttl", TextBox_TTL.Text)
-            cmd.Parameters.AddWithValue("@gender", If(RadioButton_P.Checked, "P", "L"))
-            cmd.Parameters.AddWithValue("@alamat", TextBox_Alamat.Text)
-
-            If DataGridView1.SelectedRows.Count > 0 Then
-                cmd.Parameters.AddWithValue("@id", DataGridView1.SelectedRows(0).Cells("id").Value)
-            End If
-
-            cmd.ExecuteNonQuery()
-            MessageBox.Show("Data berhasil disimpan!")
-            LoadData()
-        Catch ex As MySqlException
-            MessageBox.Show("Terjadi kesalahan: " & ex.Message)
-        Finally
-            If conn.State = ConnectionState.Open Then
-                conn.Close()
-            End If
-        End Try
+    Private Sub Button_Menu_Click(sender As Object, e As EventArgs) Handles Button_Menu.Click
+        switchPanel(registrasi)
+        Dock = DockStyle.Fill
     End Sub
 
-    ' Function to delete patient data
-    Private Sub DeletePatient()
-        If DataGridView1.SelectedRows.Count > 0 Then
-            Dim id As Integer = Convert.ToInt32(DataGridView1.SelectedRows(0).Cells("id").Value)
-            Try
-                If conn.State = ConnectionState.Closed Then
-                    conn.Open()
-                End If
-                Dim query As String = "DELETE FROM pasien WHERE id = @id"
-                Dim cmd As New MySqlCommand(query, conn)
-                cmd.Parameters.AddWithValue("@id", id)
-                cmd.ExecuteNonQuery()
-                MessageBox.Show("Data berhasil dihapus!")
-                LoadData()
-            Catch ex As MySqlException
-                MessageBox.Show("Terjadi kesalahan: " & ex.Message)
-            Finally
-                If conn.State = ConnectionState.Open Then
-                    conn.Close()
-                End If
-            End Try
-        Else
-            MessageBox.Show("Pilih baris yang akan dihapus terlebih dahulu.")
-        End If
-    End Sub
-
-    ' Form Load event
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadData()
-    End Sub
-
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-
+    Private Sub Button_Utama_Click(sender As Object, e As EventArgs) Handles Button_Utama.Click
+        'switchPanel(dashboard)'
+        Dock = DockStyle.Fill
     End Sub
 End Class
