@@ -9,3 +9,10 @@ CREATE TABLE pasien (
     gender ENUM('P', 'L'),
     alamat TEXT
 );
+--azka last commit--
+added all crud functionalities
+
+3 task remaining
+-report
+-nomer antrian 
+-create feature checkup (if necessary)
