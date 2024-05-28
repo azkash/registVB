@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|e:\\_polines\\polines smt 2\\pemrograman visual (smt 2)\\tubes\\registvb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|e:\\_polines\\polines smt 2\\pemrograman visual (smt 2)\\tubes\\registvb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
@@ -73,8 +73,8 @@
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Form1.vb [Design]",
-              "RelativeToolTip": "Form1.vb [Design]",
+              "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Form1.vb [Design]*",
+              "RelativeToolTip": "Form1.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-05-22T15:31:24.736Z",
               "EditorCaption": " [Design]"
@@ -89,8 +89,7 @@
               "RelativeToolTip": "Form1.vb",
               "ViewState": "AQIAAEMAAAAAAAAAAAAAAEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-22T15:29:54.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T15:29:54.438Z"
             }
           ]
         }
