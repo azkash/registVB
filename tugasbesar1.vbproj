@@ -161,6 +161,15 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="registrasi.Designer.vb">
+      <DependentUpon>registrasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registrasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> master
     <Compile Include="ModuleDB.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

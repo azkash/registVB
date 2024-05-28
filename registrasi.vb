@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class registrasi
+<<<<<<< HEAD
     Private connString As String = "server=localhost;userid=root;password=;database=datapasien;Convert Zero Datetime=True"
     Private conn As New MySqlConnection(connString)
     Private Sub registrasi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -53,12 +54,41 @@ Public Class registrasi
 
             ' Pindah ke tab edit data
             TabControl.SelectedTab = TabPage3
+=======
+    Private connString As String = "server=localhost;userid=root;password=;database=datapasien"
+    Private conn As New MySqlConnection(connString)
+    Private Sub registrasi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+    Private Sub Button_Edit_Click(sender As Object, e As EventArgs) Handles Button_Edit.Click
+        If DataGridView1.SelectedRows.Count > 0 Then
+            Dim selectedRow As DataGridViewRow = DataGridView1.SelectedRows(0)
+
+            TextBox_Nama.Text = selectedRow.Cells("nama").Value.ToString()
+            TextBox_TTL.Text = selectedRow.Cells("ttl").Value.ToString()
+
+            Dim gender As String = selectedRow.Cells("gender").Value.ToString()
+            If gender = "P" Then
+                RadioButton_P.Checked = True
+            ElseIf gender = "L" Then
+                RadioButton_L.Checked = True
+            End If
+
+            TextBox_Alamat.Text = selectedRow.Cells("alamat").Value.ToString()
+
+            ' Pindah ke tab tambah data
+            TabControl.SelectedTab = TabPage2
+            DataGridView1 = DataGridView2
+>>>>>>> master
         Else
             MessageBox.Show("Pilih baris yang akan diedit terlebih dahulu.")
         End If
     End Sub
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     Private Sub Button_Print_Click(sender As Object, e As EventArgs) Handles Button_Print.Click
         ' Implement print functionality
     End Sub
@@ -67,7 +97,25 @@ Public Class registrasi
         DeletePatient()
     End Sub
 
+<<<<<<< HEAD
     ' Page tambah data
+=======
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    End Sub
+
+    ' Page tambah data
+    Private Sub TextBox_Nama_TextChanged(sender As Object, e As EventArgs) Handles TextBox_Nama.TextChanged
+    End Sub
+
+    Private Sub TextBox_TTL_TextChanged(sender As Object, e As EventArgs) Handles TextBox_TTL.TextChanged
+    End Sub
+
+    Private Sub RadioButton_P_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton_P.CheckedChanged
+    End Sub
+
+    Private Sub TextBox_Alamat_TextChanged(sender As Object, e As EventArgs) Handles TextBox_Alamat.TextChanged
+    End Sub
+>>>>>>> master
 
     Private Sub Button_Save_Click(sender As Object, e As EventArgs) Handles Button_Save.Click
         SavePatient()
@@ -76,6 +124,7 @@ Public Class registrasi
     Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
     End Sub
 
+<<<<<<< HEAD
     'load poli data'
     Private Sub LoadPoliData()
         Try
@@ -102,6 +151,8 @@ Public Class registrasi
             End If
         End Try
     End Sub
+=======
+>>>>>>> master
     ' Function to load patient data
     Private Sub LoadData()
         Try
@@ -115,7 +166,10 @@ Public Class registrasi
             Dim table As New DataTable()
             adapter.Fill(table)
             DataGridView1.DataSource = table
+<<<<<<< HEAD
             DataGridView2.DataSource = table
+=======
+>>>>>>> master
         Catch ex As MySqlException
             MessageBox.Show("Terjadi kesalahan: " & ex.Message)
         Finally
@@ -127,9 +181,13 @@ Public Class registrasi
 
     ' Function to save or update patient data
     Private Sub SavePatient()
+<<<<<<< HEAD
         'buat assign edit form'
 
         If String.IsNullOrEmpty(TextBox_Nama.Text) OrElse String.IsNullOrEmpty(tempat_lahir.Text) OrElse String.IsNullOrEmpty(TextBox_Alamat.Text) Then
+=======
+        If String.IsNullOrEmpty(TextBox_Nama.Text) OrElse String.IsNullOrEmpty(TextBox_TTL.Text) OrElse String.IsNullOrEmpty(TextBox_Alamat.Text) Then
+>>>>>>> master
             MessageBox.Show("Mohon isi semua data.")
             Return
         End If
@@ -139,6 +197,7 @@ Public Class registrasi
                 conn.Open()
             End If
 
+<<<<<<< HEAD
             Dim query As String = "INSERT INTO pasien (nama, tempat_lahir, ttl, gender, alamat, keluhan, poli_id) VALUES (@nama, @tempat_lahir, @ttl, @gender, @alamat, @keluhan, @poli_id)"
             Dim cmd As New MySqlCommand(query, conn)
             cmd.Parameters.AddWithValue("@nama", TextBox_Nama.Text)
@@ -152,6 +211,28 @@ Public Class registrasi
             cmd.ExecuteNonQuery()
             MessageBox.Show("Data berhasil disimpan!")
             ClearFormTambah()
+=======
+            ' Periksa apakah data sudah ada (mode edit) atau data baru (mode tambah)
+            Dim query As String
+            If DataGridView1.SelectedRows.Count > 0 Then
+                query = "UPDATE pasien SET nama = @nama, ttl = @ttl, gender = @gender, alamat = @alamat WHERE id = @id"
+            Else
+                query = "INSERT INTO pasien (nama, ttl, gender, alamat) VALUES (@nama, @ttl, @gender, @alamat)"
+            End If
+
+            Dim cmd As New MySqlCommand(query, conn)
+            cmd.Parameters.AddWithValue("@nama", TextBox_Nama.Text)
+            cmd.Parameters.AddWithValue("@ttl", TextBox_TTL.Text)
+            cmd.Parameters.AddWithValue("@gender", If(RadioButton_P.Checked, "P", "L"))
+            cmd.Parameters.AddWithValue("@alamat", TextBox_Alamat.Text)
+
+            If DataGridView1.SelectedRows.Count > 0 Then
+                cmd.Parameters.AddWithValue("@id", DataGridView1.SelectedRows(0).Cells("id").Value)
+            End If
+
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("Data berhasil disimpan!")
+>>>>>>> master
             LoadData()
         Catch ex As MySqlException
             MessageBox.Show("Terjadi kesalahan: " & ex.Message)
@@ -162,6 +243,7 @@ Public Class registrasi
         End Try
     End Sub
 
+<<<<<<< HEAD
     Private Sub EditPatient()
         ' Ensure required fields are not empty
         If String.IsNullOrEmpty(TextBox4_nama.Text) OrElse String.IsNullOrEmpty(TextBox1_tLahir.Text) OrElse String.IsNullOrEmpty(TextBox3_alamat.Text) Then
@@ -221,6 +303,8 @@ Public Class registrasi
     End Sub
 
 
+=======
+>>>>>>> master
     ' Function to delete patient data
     Private Sub DeletePatient()
         If DataGridView1.SelectedRows.Count > 0 Then
@@ -256,7 +340,10 @@ Public Class registrasi
 
     End Sub
 
+<<<<<<< HEAD
     'tombol cari'
+=======
+>>>>>>> master
     Private Sub Button_Search_Click(sender As Object, e As EventArgs) Handles Button_Search.Click
         Try
             If conn.State = ConnectionState.Open Then
@@ -289,6 +376,7 @@ Public Class registrasi
 
     End Sub
 
+<<<<<<< HEAD
     Private Sub TabPage3_Click(sender As Object, e As EventArgs) Handles TabPage3.Click
 
     End Sub
@@ -304,4 +392,9 @@ Public Class registrasi
     Private Sub saveEditPasien_Click(sender As Object, e As EventArgs) Handles saveEditPasien.Click
         EditPatient()
     End Sub
+=======
+    Private Sub Button_Save_Click_1(sender As Object, e As EventArgs) Handles Button_Save.Click
+
+    End Sub
+>>>>>>> master
 End Class

@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+=======
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+>>>>>>> master
 Partial Class registrasi
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
+<<<<<<< HEAD
     <System.Diagnostics.DebuggerNonUserCode()>
+=======
+    <System.Diagnostics.DebuggerNonUserCode()> _
+>>>>>>> master
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +28,14 @@ Partial Class registrasi
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
+<<<<<<< HEAD
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+=======
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+>>>>>>> master
         Me.TabControl = New Guna.UI2.WinForms.Guna2TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button_Print = New Guna.UI2.WinForms.Guna2Button()
@@ -32,6 +46,7 @@ Partial Class registrasi
         Me.TextBox_Search = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+<<<<<<< HEAD
         Me.tempat_lahir = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.tglLahir = New System.Windows.Forms.DateTimePicker()
@@ -42,6 +57,12 @@ Partial Class registrasi
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Button_Cancel = New System.Windows.Forms.Button()
         Me.Button_Save = New System.Windows.Forms.Button()
+=======
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Button_Cancel = New System.Windows.Forms.Button()
+        Me.Button_Save = New System.Windows.Forms.Button()
+        Me.TextBox_TTL = New System.Windows.Forms.TextBox()
+>>>>>>> master
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButton_L = New System.Windows.Forms.RadioButton()
@@ -50,6 +71,7 @@ Partial Class registrasi
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox_Nama = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+<<<<<<< HEAD
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.label_id = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -71,23 +93,40 @@ Partial Class registrasi
         Me.TextBox4_nama = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+=======
+>>>>>>> master
         Me.TabControl.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+<<<<<<< HEAD
         Me.TabPage3.SuspendLayout()
         Me.GroupBox2_jk.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
+=======
+        Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(1920, 1080)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(200, 100)
+        Me.Panel1.TabIndex = 0
+        '
+>>>>>>> master
         'TabControl
         '
         Me.TabControl.Alignment = System.Windows.Forms.TabAlignment.Left
         Me.TabControl.Controls.Add(Me.TabPage1)
         Me.TabControl.Controls.Add(Me.TabPage2)
+<<<<<<< HEAD
         Me.TabControl.Controls.Add(Me.TabPage3)
+=======
+>>>>>>> master
         Me.TabControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl.ItemSize = New System.Drawing.Size(180, 40)
         Me.TabControl.Location = New System.Drawing.Point(0, 0)
@@ -139,7 +178,11 @@ Partial Class registrasi
         Me.Button_Print.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button_Print.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Button_Print.ForeColor = System.Drawing.Color.White
+<<<<<<< HEAD
         Me.Button_Print.Location = New System.Drawing.Point(978, 129)
+=======
+        Me.Button_Print.Location = New System.Drawing.Point(1010, 128)
+>>>>>>> master
         Me.Button_Print.Name = "Button_Print"
         Me.Button_Print.Size = New System.Drawing.Size(86, 35)
         Me.Button_Print.TabIndex = 6
@@ -155,7 +198,11 @@ Partial Class registrasi
         Me.Button_Delete.FillColor = System.Drawing.Color.Red
         Me.Button_Delete.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Button_Delete.ForeColor = System.Drawing.Color.White
+<<<<<<< HEAD
         Me.Button_Delete.Location = New System.Drawing.Point(978, 170)
+=======
+        Me.Button_Delete.Location = New System.Drawing.Point(1010, 169)
+>>>>>>> master
         Me.Button_Delete.Name = "Button_Delete"
         Me.Button_Delete.Size = New System.Drawing.Size(86, 35)
         Me.Button_Delete.TabIndex = 5
@@ -171,7 +218,11 @@ Partial Class registrasi
         Me.Button_Edit.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button_Edit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Button_Edit.ForeColor = System.Drawing.Color.White
+<<<<<<< HEAD
         Me.Button_Edit.Location = New System.Drawing.Point(978, 88)
+=======
+        Me.Button_Edit.Location = New System.Drawing.Point(1010, 87)
+>>>>>>> master
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(86, 35)
         Me.Button_Edit.TabIndex = 4
@@ -195,11 +246,19 @@ Partial Class registrasi
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+<<<<<<< HEAD
         Me.DataGridView1.Location = New System.Drawing.Point(22, 88)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(950, 412)
+=======
+        Me.DataGridView1.Location = New System.Drawing.Point(22, 87)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(982, 555)
+>>>>>>> master
         Me.DataGridView1.TabIndex = 2
         '
         'TextBox_Search
@@ -236,6 +295,7 @@ Partial Class registrasi
         '
         'TabPage2
         '
+<<<<<<< HEAD
         Me.TabPage2.Controls.Add(Me.tempat_lahir)
         Me.TabPage2.Controls.Add(Me.Label7)
         Me.TabPage2.Controls.Add(Me.tglLahir)
@@ -246,6 +306,12 @@ Partial Class registrasi
         Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Controls.Add(Me.Button_Cancel)
         Me.TabPage2.Controls.Add(Me.Button_Save)
+=======
+        Me.TabPage2.Controls.Add(Me.DataGridView2)
+        Me.TabPage2.Controls.Add(Me.Button_Cancel)
+        Me.TabPage2.Controls.Add(Me.Button_Save)
+        Me.TabPage2.Controls.Add(Me.TextBox_TTL)
+>>>>>>> master
         Me.TabPage2.Controls.Add(Me.Label5)
         Me.TabPage2.Controls.Add(Me.GroupBox1)
         Me.TabPage2.Controls.Add(Me.TextBox_Alamat)
@@ -255,11 +321,16 @@ Partial Class registrasi
         Me.TabPage2.Location = New System.Drawing.Point(184, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+<<<<<<< HEAD
         Me.TabPage2.Size = New System.Drawing.Size(1732, 1072)
+=======
+        Me.TabPage2.Size = New System.Drawing.Size(710, 578)
+>>>>>>> master
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Tambah data"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+<<<<<<< HEAD
         'tempat_lahir
         '
         Me.tempat_lahir.Location = New System.Drawing.Point(22, 278)
@@ -328,12 +399,26 @@ Partial Class registrasi
         Me.DataGridView2.RowHeadersWidth = 51
         Me.DataGridView2.RowTemplate.Height = 24
         Me.DataGridView2.Size = New System.Drawing.Size(1000, 412)
+=======
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(10, 272)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.RowTemplate.Height = 24
+        Me.DataGridView2.Size = New System.Drawing.Size(538, 274)
+>>>>>>> master
         Me.DataGridView2.TabIndex = 11
         '
         'Button_Cancel
         '
         Me.Button_Cancel.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Button_Cancel.Location = New System.Drawing.Point(450, 300)
+=======
+        Me.Button_Cancel.Location = New System.Drawing.Point(241, 216)
+>>>>>>> master
         Me.Button_Cancel.Name = "Button_Cancel"
         Me.Button_Cancel.Size = New System.Drawing.Size(123, 30)
         Me.Button_Cancel.TabIndex = 10
@@ -343,29 +428,55 @@ Partial Class registrasi
         'Button_Save
         '
         Me.Button_Save.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Button_Save.Location = New System.Drawing.Point(296, 300)
+=======
+        Me.Button_Save.Location = New System.Drawing.Point(87, 216)
+>>>>>>> master
         Me.Button_Save.Name = "Button_Save"
         Me.Button_Save.Size = New System.Drawing.Size(123, 30)
         Me.Button_Save.TabIndex = 9
         Me.Button_Save.Text = "Save"
         Me.Button_Save.UseVisualStyleBackColor = True
         '
+<<<<<<< HEAD
+=======
+        'TextBox_TTL
+        '
+        Me.TextBox_TTL.Location = New System.Drawing.Point(241, 40)
+        Me.TextBox_TTL.Name = "TextBox_TTL"
+        Me.TextBox_TTL.Size = New System.Drawing.Size(200, 22)
+        Me.TextBox_TTL.TabIndex = 8
+        '
+>>>>>>> master
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label5.Location = New System.Drawing.Point(18, 186)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(107, 23)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Tanggal lahir"
+=======
+        Me.Label5.Location = New System.Drawing.Point(237, 14)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(172, 23)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Tempat, Tanggal lahir"
+>>>>>>> master
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.RadioButton_L)
         Me.GroupBox1.Controls.Add(Me.RadioButton_P)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.GroupBox1.Location = New System.Drawing.Point(22, 74)
+=======
+        Me.GroupBox1.Location = New System.Drawing.Point(10, 74)
+>>>>>>> master
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox1.TabIndex = 6
@@ -396,17 +507,28 @@ Partial Class registrasi
         '
         'TextBox_Alamat
         '
+<<<<<<< HEAD
         Me.TextBox_Alamat.Location = New System.Drawing.Point(293, 38)
         Me.TextBox_Alamat.Multiline = True
         Me.TextBox_Alamat.Name = "TextBox_Alamat"
         Me.TextBox_Alamat.Size = New System.Drawing.Size(280, 62)
+=======
+        Me.TextBox_Alamat.Location = New System.Drawing.Point(241, 112)
+        Me.TextBox_Alamat.Multiline = True
+        Me.TextBox_Alamat.Name = "TextBox_Alamat"
+        Me.TextBox_Alamat.Size = New System.Drawing.Size(200, 62)
+>>>>>>> master
         Me.TextBox_Alamat.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label4.Location = New System.Drawing.Point(289, 12)
+=======
+        Me.Label4.Location = New System.Drawing.Point(237, 86)
+>>>>>>> master
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 23)
         Me.Label4.TabIndex = 2
@@ -414,7 +536,11 @@ Partial Class registrasi
         '
         'TextBox_Nama
         '
+<<<<<<< HEAD
         Me.TextBox_Nama.Location = New System.Drawing.Point(22, 40)
+=======
+        Me.TextBox_Nama.Location = New System.Drawing.Point(10, 40)
+>>>>>>> master
         Me.TextBox_Nama.Name = "TextBox_Nama"
         Me.TextBox_Nama.Size = New System.Drawing.Size(200, 22)
         Me.TextBox_Nama.TabIndex = 1
@@ -423,12 +549,17 @@ Partial Class registrasi
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label3.Location = New System.Drawing.Point(18, 14)
+=======
+        Me.Label3.Location = New System.Drawing.Point(6, 14)
+>>>>>>> master
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 23)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Nama"
         '
+<<<<<<< HEAD
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.label_id)
@@ -640,15 +771,25 @@ Partial Class registrasi
         Me.Panel1.Size = New System.Drawing.Size(1920, 1080)
         Me.Panel1.TabIndex = 4
         '
+=======
+>>>>>>> master
         'registrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
+<<<<<<< HEAD
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "registrasi"
         Me.Text = "registrasi"
+=======
+        Me.Controls.Add(Me.TabControl)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "registrasi"
+        Me.Text = "Form2"
+>>>>>>> master
         Me.TabControl.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
@@ -658,15 +799,22 @@ Partial Class registrasi
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+<<<<<<< HEAD
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.GroupBox2_jk.ResumeLayout(False)
         Me.GroupBox2_jk.PerformLayout()
         Me.Panel1.ResumeLayout(False)
+=======
+>>>>>>> master
         Me.ResumeLayout(False)
 
     End Sub
 
+<<<<<<< HEAD
+=======
+    Friend WithEvents Panel1 As Panel
+>>>>>>> master
     Friend WithEvents TabControl As Guna.UI2.WinForms.Guna2TabControl
     Public WithEvents TabPage1 As TabPage
     Friend WithEvents Button_Print As Guna.UI2.WinForms.Guna2Button
@@ -680,6 +828,10 @@ Partial Class registrasi
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Button_Cancel As Button
     Friend WithEvents Button_Save As Button
+<<<<<<< HEAD
+=======
+    Friend WithEvents TextBox_TTL As TextBox
+>>>>>>> master
     Friend WithEvents Label5 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RadioButton_L As RadioButton
@@ -688,6 +840,7 @@ Partial Class registrasi
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox_Nama As TextBox
     Friend WithEvents Label3 As Label
+<<<<<<< HEAD
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents keluhan As TextBox
@@ -716,4 +869,6 @@ Partial Class registrasi
     Friend WithEvents Label13 As Label
     Friend WithEvents label_id As TextBox
     Friend WithEvents Label14 As Label
+=======
+>>>>>>> master
 End Class

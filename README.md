@@ -9,6 +9,7 @@ CREATE TABLE pasien (
     gender ENUM('P', 'L'),
     alamat TEXT
 );
+<<<<<<< HEAD
 CREATE TABLE pasien (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nama VARCHAR(100),
@@ -17,3 +18,12 @@ CREATE TABLE pasien (
     alamat TEXT
 );
 
+=======
+--azka last commit--
+added all crud functionalities
+
+3 task remaining
+-report
+-nomer antrian 
+-create feature checkup (if necessary)
+>>>>>>> master
