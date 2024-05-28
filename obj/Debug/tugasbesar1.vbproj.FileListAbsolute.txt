@@ -48,7 +48,6 @@ E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\tu
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\Guna.UI2.dll
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.vbproj.AssemblyReference.cache
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.Form1.resources
-E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.Form2.resources
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.Resources.resources
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.vbproj.GenerateResource.cache
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.vbproj.CoreCompileInputs.cache
@@ -161,3 +160,19 @@ D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\
 D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\1.1added a db con, data view, edit\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\1.1added a db con, data view, edit\bin\Debug\stdole.dll
 D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\1.1added a db con, data view, edit\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\ShockwaveFlashObjects.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\stdole.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.dashboard.resources
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.registrasi.resources
