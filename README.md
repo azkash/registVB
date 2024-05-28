@@ -9,3 +9,11 @@ CREATE TABLE pasien (
     gender ENUM('P', 'L'),
     alamat TEXT
 );
+CREATE TABLE pasien (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100),
+    ttl DATE,
+    gender ENUM('P', 'L'),
+    alamat TEXT
+);
+
