@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Main
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.SlidingPanel = New System.Windows.Forms.Panel()
         Me.Button_Logout = New System.Windows.Forms.Button()
         Me.Button_Menu = New System.Windows.Forms.Button()
@@ -67,7 +68,7 @@ Partial Class Form1
         Me.Button_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button_Logout.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Button_Logout.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button_Logout.Image = Global.tugasbesar1.My.Resources.Resources.icons8_power_25
+        Me.Button_Logout.Image = CType(resources.GetObject("Button_Logout.Image"), System.Drawing.Image)
         Me.Button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button_Logout.Location = New System.Drawing.Point(0, 400)
         Me.Button_Logout.Name = "Button_Logout"
@@ -83,13 +84,13 @@ Partial Class Form1
         Me.Button_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button_Menu.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Button_Menu.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button_Menu.Image = Global.tugasbesar1.My.Resources.Resources.icons8_mail_25
+        Me.Button_Menu.Image = CType(resources.GetObject("Button_Menu.Image"), System.Drawing.Image)
         Me.Button_Menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button_Menu.Location = New System.Drawing.Point(0, 350)
         Me.Button_Menu.Name = "Button_Menu"
         Me.Button_Menu.Size = New System.Drawing.Size(250, 50)
         Me.Button_Menu.TabIndex = 3
-        Me.Button_Menu.Text = "Menu"
+        Me.Button_Menu.Text = "Registrasi"
         Me.Button_Menu.UseVisualStyleBackColor = True
         '
         'Button_Utama
@@ -99,7 +100,7 @@ Partial Class Form1
         Me.Button_Utama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button_Utama.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Button_Utama.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button_Utama.Image = Global.tugasbesar1.My.Resources.Resources.icons8_home_25
+        Me.Button_Utama.Image = CType(resources.GetObject("Button_Utama.Image"), System.Drawing.Image)
         Me.Button_Utama.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button_Utama.Location = New System.Drawing.Point(0, 300)
         Me.Button_Utama.Name = "Button_Utama"
@@ -120,7 +121,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.tugasbesar1.My.Resources.Resources.icons8_user_75
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(78, 78)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
@@ -144,7 +145,7 @@ Partial Class Form1
         Me.BtnSlidingMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSlidingMenu.Font = New System.Drawing.Font("Segoe UI", 6.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSlidingMenu.ForeColor = System.Drawing.SystemColors.Info
-        Me.BtnSlidingMenu.Image = Global.tugasbesar1.My.Resources.Resources.icons8_menu_25_1_
+        Me.BtnSlidingMenu.Image = CType(resources.GetObject("BtnSlidingMenu.Image"), System.Drawing.Image)
         Me.BtnSlidingMenu.Location = New System.Drawing.Point(200, 0)
         Me.BtnSlidingMenu.Name = "BtnSlidingMenu"
         Me.BtnSlidingMenu.Size = New System.Drawing.Size(50, 50)
@@ -174,7 +175,7 @@ Partial Class Form1
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.BackgroundImage = Global.tugasbesar1.My.Resources.Resources.Untitled_design_3_
+        Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
@@ -188,6 +189,7 @@ Partial Class Form1
         Me.HeaderMainPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.HeaderMainPanel.Location = New System.Drawing.Point(0, 0)
         Me.HeaderMainPanel.Name = "HeaderMainPanel"
+        Me.HeaderMainPanel.Padding = New System.Windows.Forms.Padding(12, 12, 2, 12)
         Me.HeaderMainPanel.Size = New System.Drawing.Size(1058, 50)
         Me.HeaderMainPanel.TabIndex = 0
         '
@@ -197,7 +199,7 @@ Partial Class Form1
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(141, 25)
         Me.Label1.TabIndex = 0
@@ -209,7 +211,7 @@ Partial Class Form1
         '
         Me.Timer1.Interval = 10
         '
-        'Form1
+        'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -217,7 +219,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1308, 1033)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.SlidingPanel)
-        Me.Name = "Form1"
+        Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrasi"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class Main
     Sub ClearTextMenuList()
         Button_Utama.Text = ""
         Button_Menu.Text = ""
@@ -61,7 +61,5 @@ Public Class Form1
         Dock = DockStyle.Fill
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
-    End Sub
 End Class
