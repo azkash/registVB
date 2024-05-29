@@ -93,7 +93,7 @@ Partial Class registrasi
         Me.TabControl.Location = New System.Drawing.Point(0, 0)
         Me.TabControl.Name = "TabControl"
         Me.TabControl.SelectedIndex = 0
-        Me.TabControl.Size = New System.Drawing.Size(1920, 1080)
+        Me.TabControl.Size = New System.Drawing.Size(1652, 983)
         Me.TabControl.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
         Me.TabControl.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.TabControl.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
@@ -125,7 +125,7 @@ Partial Class registrasi
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1732, 1072)
+        Me.TabPage1.Size = New System.Drawing.Size(1464, 975)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Lihat data"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -637,14 +637,14 @@ Partial Class registrasi
         Me.Panel1.Controls.Add(Me.TabControl)
         Me.Panel1.Location = New System.Drawing.Point(-1, -1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1920, 1080)
+        Me.Panel1.Size = New System.Drawing.Size(1652, 983)
         Me.Panel1.TabIndex = 4
         '
         'registrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1920, 1080)
+        Me.ClientSize = New System.Drawing.Size(1652, 983)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "registrasi"

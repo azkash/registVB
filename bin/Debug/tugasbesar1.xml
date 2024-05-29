@@ -22,12 +22,32 @@ tugasbesar1
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:tugasbesar1.My.Resources.Resources.icons8_checkup_25_1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:tugasbesar1.My.Resources.Resources.icons8_checkup_30">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:tugasbesar1.My.Resources.Resources.icons8_home_25">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:tugasbesar1.My.Resources.Resources.icons8_logout_25">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:tugasbesar1.My.Resources.Resources.icons8_mail_25">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:tugasbesar1.My.Resources.Resources.icons8_medical_checkup_25">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -53,6 +73,21 @@ tugasbesar1
 </summary>
 </member>
 <member name="P:tugasbesar1.My.Resources.Resources.icons8_power_25">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:tugasbesar1.My.Resources.Resources.icons8_queue_25">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:tugasbesar1.My.Resources.Resources.icons8_queue_251">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:tugasbesar1.My.Resources.Resources.icons8_registration_25">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

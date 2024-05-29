@@ -1,16 +1,20 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class Main
     Sub ClearTextMenuList()
         Button_Utama.Text = ""
         Button_Menu.Text = ""
         Button_Logout.Text = ""
+        Button_mcu.Text = ""
+        Button_queue.Text = ""
     End Sub
 
     Sub SetTextMenuList()
         Button_Utama.Text = "Menu"
         Button_Menu.Text = "Mail"
         Button_Logout.Text = "Logout"
+        Button_mcu.Text = "Medical Checkup"
+        Button_queue.Text = "Queue"
     End Sub
 
     Dim slidingMenu As String = "close"
@@ -50,18 +54,40 @@ Public Class Form1
     End Sub
 
     Private Sub Button_Menu_Click(sender As Object, e As EventArgs) Handles Button_Menu.Click
+        queue.Visible = False
+        Label_mcu.Visible = False
         Label1.Visible = True
         switchPanel(registrasi)
         Dock = DockStyle.Fill
     End Sub
 
     Private Sub Button_Utama_Click(sender As Object, e As EventArgs) Handles Button_Utama.Click
+        queue.Visible = False
+        Label_mcu.Visible = False
         Label1.Visible = False
         switchPanel(dashboard)
         Dock = DockStyle.Fill
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+    Private Sub Button_Logout_Click(sender As Object, e As EventArgs) Handles Button_Logout.Click
+        Me.Close()
+        MenuLogin.Show()
+        Dock = DockStyle.Fill
+    End Sub
 
+    Private Sub Button_mcu_Click(sender As Object, e As EventArgs) Handles Button_mcu.Click
+        queue.Visible = False
+        Label_mcu.Visible = True
+        Label1.Visible = False
+        switchPanel(medical_checkup)
+        Dock = DockStyle.Fill
+    End Sub
+
+    Private Sub Button_queue_Click(sender As Object, e As EventArgs) Handles Button_queue.Click
+        queue.Visible = True
+        Label_mcu.Visible = False
+        Label1.Visible = False
+        switchPanel(queue_form)
+        Dock = DockStyle.Fill
     End Sub
 End Class

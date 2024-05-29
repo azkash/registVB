@@ -154,11 +154,23 @@
     <Compile Include="dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medical_checkup.Designer.vb">
+      <DependentUpon>medical_checkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="medical_checkup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLogin.Designer.vb">
+      <DependentUpon>MenuLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModuleDB.vb" />
@@ -166,6 +178,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -176,6 +189,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="queue.Designer.vb">
+      <DependentUpon>queue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="queue.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="registrasi.Designer.vb">
       <DependentUpon>registrasi.vb</DependentUpon>
@@ -192,14 +211,23 @@
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medical_checkup.resx">
+      <DependentUpon>medical_checkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLogin.resx">
+      <DependentUpon>MenuLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="queue.resx">
+      <DependentUpon>queue.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="registrasi.resx">
       <DependentUpon>registrasi.vb</DependentUpon>
@@ -265,6 +293,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled design%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-medical-checkup-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-registration-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-queue-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-queue-251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checkup-25%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checkup-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-25.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

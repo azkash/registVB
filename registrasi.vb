@@ -248,7 +248,7 @@ Public Class registrasi
     End Sub
 
     ' Form Load event
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadData()
     End Sub
 
@@ -286,10 +286,6 @@ Public Class registrasi
                 conn.Close()
             End If
         End Try
-
-    End Sub
-
-    Private Sub TabPage3_Click(sender As Object, e As EventArgs) Handles TabPage3.Click
 
     End Sub
 
