@@ -129,4 +129,5 @@ Public Class medical_checkup
         edit_patient()
         ClearFormEdit()
     End Sub
+
 End Class

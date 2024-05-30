@@ -38,10 +38,10 @@ Public Class queue_form
 
         If Guna2DataGridView1.Rows.Count > 0 Then
             Dim currentRow = Guna2DataGridView1.Rows(0)
-            If currentRow IsNot Nothing Then
-                Label_Antrian.Text = currentRow.Cells("id").Value?.ToString()
-                Label_Poli.Text = currentRow.Cells("nama_poli").Value?.ToString()
-                Label_NamaPasien.Text = currentRow.Cells("nama").Value?.ToString()
+            If currentRow IsNot Nothing AndAlso currentRow.Cells("id").Value IsNot Nothing Then
+                Label_Antrian.Text = currentRow.Cells("id").Value.ToString()
+                Label_Poli.Text = currentRow.Cells("nama_poli").Value.ToString()
+                Label_NamaPasien.Text = currentRow.Cells("nama").Value.ToString()
                 lastProcessedId = CInt(currentRow.Cells("id").Value) ' Update the last processed ID
                 Guna2DataGridView1.Rows.RemoveAt(0)
             End If

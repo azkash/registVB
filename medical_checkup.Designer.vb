@@ -93,9 +93,9 @@ Partial Class medical_checkup
         Me.btn_select.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_select.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_select.ForeColor = System.Drawing.Color.White
-        Me.btn_select.Location = New System.Drawing.Point(714, 109)
+        Me.btn_select.Location = New System.Drawing.Point(730, 109)
         Me.btn_select.Name = "btn_select"
-        Me.btn_select.Size = New System.Drawing.Size(71, 35)
+        Me.btn_select.Size = New System.Drawing.Size(118, 35)
         Me.btn_select.TabIndex = 10
         Me.btn_select.Text = "Select"
         '
@@ -118,7 +118,7 @@ Partial Class medical_checkup
         Me.textbox_nama.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.textbox_nama.PlaceholderText = ""
         Me.textbox_nama.SelectedText = ""
-        Me.textbox_nama.Size = New System.Drawing.Size(229, 48)
+        Me.textbox_nama.Size = New System.Drawing.Size(311, 48)
         Me.textbox_nama.TabIndex = 11
         '
         'Label1
@@ -160,14 +160,14 @@ Partial Class medical_checkup
         Me.textbox_keluhan.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.textbox_keluhan.PlaceholderText = ""
         Me.textbox_keluhan.SelectedText = ""
-        Me.textbox_keluhan.Size = New System.Drawing.Size(229, 48)
+        Me.textbox_keluhan.Size = New System.Drawing.Size(311, 116)
         Me.textbox_keluhan.TabIndex = 13
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(307, 452)
+        Me.Label3.Location = New System.Drawing.Point(385, 452)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(73, 20)
         Me.Label3.TabIndex = 16
@@ -185,13 +185,13 @@ Partial Class medical_checkup
         Me.textbox_diagnosa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.textbox_diagnosa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.textbox_diagnosa.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.textbox_diagnosa.Location = New System.Drawing.Point(311, 476)
+        Me.textbox_diagnosa.Location = New System.Drawing.Point(389, 476)
         Me.textbox_diagnosa.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.textbox_diagnosa.Name = "textbox_diagnosa"
         Me.textbox_diagnosa.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.textbox_diagnosa.PlaceholderText = ""
         Me.textbox_diagnosa.SelectedText = ""
-        Me.textbox_diagnosa.Size = New System.Drawing.Size(264, 48)
+        Me.textbox_diagnosa.Size = New System.Drawing.Size(319, 150)
         Me.textbox_diagnosa.TabIndex = 15
         '
         'btn_simpan
@@ -204,18 +204,18 @@ Partial Class medical_checkup
         Me.btn_simpan.FillColor = System.Drawing.Color.MediumSeaGreen
         Me.btn_simpan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_simpan.ForeColor = System.Drawing.Color.White
-        Me.btn_simpan.Location = New System.Drawing.Point(600, 476)
+        Me.btn_simpan.Location = New System.Drawing.Point(468, 642)
         Me.btn_simpan.Name = "btn_simpan"
-        Me.btn_simpan.Size = New System.Drawing.Size(108, 48)
+        Me.btn_simpan.Size = New System.Drawing.Size(139, 48)
         Me.btn_simpan.TabIndex = 17
         Me.btn_simpan.Text = "Simpan"
         '
         'TextBox_id
         '
         Me.TextBox_id.Enabled = False
-        Me.TextBox_id.Location = New System.Drawing.Point(311, 397)
+        Me.TextBox_id.Location = New System.Drawing.Point(329, 408)
         Me.TextBox_id.Name = "TextBox_id"
-        Me.TextBox_id.Size = New System.Drawing.Size(74, 22)
+        Me.TextBox_id.Size = New System.Drawing.Size(51, 22)
         Me.TextBox_id.TabIndex = 18
         '
         'medical_checkup
