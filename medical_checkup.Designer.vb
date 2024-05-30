@@ -61,11 +61,11 @@ Partial Class medical_checkup
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(48, 109)
+        Me.DataGridView1.Location = New System.Drawing.Point(48, 122)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(660, 282)
+        Me.DataGridView1.Size = New System.Drawing.Size(842, 282)
         Me.DataGridView1.TabIndex = 8
         '
         'btn_cari
@@ -75,11 +75,11 @@ Partial Class medical_checkup
         Me.btn_cari.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btn_cari.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btn_cari.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btn_cari.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cari.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cari.ForeColor = System.Drawing.Color.White
         Me.btn_cari.Location = New System.Drawing.Point(283, 62)
         Me.btn_cari.Name = "btn_cari"
-        Me.btn_cari.Size = New System.Drawing.Size(66, 40)
+        Me.btn_cari.Size = New System.Drawing.Size(76, 45)
         Me.btn_cari.TabIndex = 9
         Me.btn_cari.Text = "Cari"
         '
@@ -91,11 +91,11 @@ Partial Class medical_checkup
         Me.btn_select.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btn_select.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btn_select.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btn_select.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_select.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_select.ForeColor = System.Drawing.Color.White
-        Me.btn_select.Location = New System.Drawing.Point(730, 109)
+        Me.btn_select.Location = New System.Drawing.Point(1138, 113)
         Me.btn_select.Name = "btn_select"
-        Me.btn_select.Size = New System.Drawing.Size(118, 35)
+        Me.btn_select.Size = New System.Drawing.Size(118, 45)
         Me.btn_select.TabIndex = 10
         Me.btn_select.Text = "Select"
         '
@@ -110,9 +110,9 @@ Partial Class medical_checkup
         Me.textbox_nama.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.textbox_nama.Enabled = False
         Me.textbox_nama.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.textbox_nama.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.textbox_nama.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.textbox_nama.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.textbox_nama.Location = New System.Drawing.Point(48, 476)
+        Me.textbox_nama.Location = New System.Drawing.Point(48, 539)
         Me.textbox_nama.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.textbox_nama.Name = "textbox_nama"
         Me.textbox_nama.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -124,20 +124,20 @@ Partial Class medical_checkup
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(48, 452)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(43, 496)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 20)
+        Me.Label1.Size = New System.Drawing.Size(68, 28)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Nama"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(48, 549)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(43, 611)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 20)
+        Me.Label2.Size = New System.Drawing.Size(95, 28)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Keluhan "
         '
@@ -152,9 +152,9 @@ Partial Class medical_checkup
         Me.textbox_keluhan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.textbox_keluhan.Enabled = False
         Me.textbox_keluhan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.textbox_keluhan.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.textbox_keluhan.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.textbox_keluhan.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.textbox_keluhan.Location = New System.Drawing.Point(48, 573)
+        Me.textbox_keluhan.Location = New System.Drawing.Point(48, 650)
         Me.textbox_keluhan.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.textbox_keluhan.Name = "textbox_keluhan"
         Me.textbox_keluhan.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -166,10 +166,10 @@ Partial Class medical_checkup
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(385, 452)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(779, 496)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 20)
+        Me.Label3.Size = New System.Drawing.Size(100, 28)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Diagnosa"
         '
@@ -183,9 +183,9 @@ Partial Class medical_checkup
         Me.textbox_diagnosa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.textbox_diagnosa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.textbox_diagnosa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.textbox_diagnosa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.textbox_diagnosa.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.textbox_diagnosa.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.textbox_diagnosa.Location = New System.Drawing.Point(389, 476)
+        Me.textbox_diagnosa.Location = New System.Drawing.Point(784, 539)
         Me.textbox_diagnosa.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.textbox_diagnosa.Name = "textbox_diagnosa"
         Me.textbox_diagnosa.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -202,9 +202,9 @@ Partial Class medical_checkup
         Me.btn_simpan.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btn_simpan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btn_simpan.FillColor = System.Drawing.Color.MediumSeaGreen
-        Me.btn_simpan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_simpan.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_simpan.ForeColor = System.Drawing.Color.White
-        Me.btn_simpan.Location = New System.Drawing.Point(468, 642)
+        Me.btn_simpan.Location = New System.Drawing.Point(863, 705)
         Me.btn_simpan.Name = "btn_simpan"
         Me.btn_simpan.Size = New System.Drawing.Size(139, 48)
         Me.btn_simpan.TabIndex = 17
@@ -213,7 +213,7 @@ Partial Class medical_checkup
         'TextBox_id
         '
         Me.TextBox_id.Enabled = False
-        Me.TextBox_id.Location = New System.Drawing.Point(329, 408)
+        Me.TextBox_id.Location = New System.Drawing.Point(526, 421)
         Me.TextBox_id.Name = "TextBox_id"
         Me.TextBox_id.Size = New System.Drawing.Size(51, 22)
         Me.TextBox_id.TabIndex = 18

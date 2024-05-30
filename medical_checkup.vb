@@ -2,6 +2,19 @@
 Public Class medical_checkup
     Private connString As String = "server=localhost;userid=root;password=;database=datapasien;Convert Zero Datetime=True"
     Private conn As New MySqlConnection(connString)
+    Private Sub medical_checkup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Kode untuk memuat data dan mengatur lebar kolom DataGridView
+        LoadData()
+
+        ' Set the width of the columns
+        DataGridView1.Columns("id").Width = 30
+        DataGridView1.Columns("nama").Width = 150
+        DataGridView1.Columns("gender").Width = 45
+        DataGridView1.Columns("keluhan").Width = 150
+        DataGridView1.Columns("diagnosa").Width = 150
+    End Sub
+
+
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         LoadData()
     End Sub
@@ -13,6 +26,8 @@ Public Class medical_checkup
     End Sub
 
     Private Sub LoadData()
+        DataGridView1.DefaultCellStyle.Font = New Font("Segoe UI", 12)
+
         Try
             If conn.State = ConnectionState.Open Then
                 conn.Close()
@@ -66,11 +81,6 @@ Public Class medical_checkup
 
     End Sub
 
-    'untuk select data'
-
-    Private Sub medical_checkup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadData()
-    End Sub
     'select'
     Private Sub btn_select_Click(sender As Object, e As EventArgs) Handles btn_select.Click
         If DataGridView1.SelectedRows.Count > 0 Then

@@ -5,6 +5,27 @@ Public Class registrasi
     Private Sub registrasi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadPoliData()
         LoadData()
+        DataGridView1.DefaultCellStyle.Font = New Font("Segoe UI", 12)
+        DataGridView1.Columns("id").Width = 30 ' Set the width of the "id" column
+        DataGridView1.Columns("nama").Width = 150 ' Set the width of the "nama" column
+        DataGridView1.Columns("tempat_lahir").Width = 100 ' Set the width of the "tempat_lahir" column
+        DataGridView1.Columns("ttl").Width = 100 ' Set the width of the "ttl" column
+        DataGridView1.Columns("gender").Width = 50 ' Set the width of the "gender" column
+        DataGridView1.Columns("alamat").Width = 200 ' Set the width of the "alamat" column
+        DataGridView1.Columns("keluhan").Width = 150 ' Set the width of the "keluhan" column
+        DataGridView1.Columns("poli_id").Width = 45 ' Set the width of the "poli_id" column
+        DataGridView1.Columns("diagnosa").Width = 150 ' Set the width of the "diagnosa" column
+
+        DataGridView2.DefaultCellStyle.Font = New Font("Segoe UI", 12)
+        DataGridView2.Columns("id").Width = 30 ' Set the width of the "id" column
+        DataGridView2.Columns("nama").Width = 150 ' Set the width of the "nama" column
+        DataGridView2.Columns("tempat_lahir").Width = 100 ' Set the width of the "tempat_lahir" column
+        DataGridView2.Columns("ttl").Width = 100 ' Set the width of the "ttl" column
+        DataGridView2.Columns("gender").Width = 50 ' Set the width of the "gender" column
+        DataGridView2.Columns("alamat").Width = 200 ' Set the width of the "alamat" column
+        DataGridView2.Columns("keluhan").Width = 150 ' Set the width of the "keluhan" column
+        DataGridView2.Columns("poli_id").Width = 45 ' Set the width of the "poli_id" column
+        DataGridView2.Columns("diagnosa").Width = 150 ' Set the width of the "diagnosa" column
     End Sub
 
     Private Sub ClearFormTambah()
@@ -51,7 +72,7 @@ Public Class registrasi
 
             TextBox2_keluhan.Text = selectedRow.Cells("keluhan").Value.ToString()
 
-            ' Pindah ke tab edit data
+            TabControl.Visible = True
             TabControl.SelectedTab = TabPage3
         Else
             MessageBox.Show("Pilih baris yang akan diedit terlebih dahulu.")
@@ -71,9 +92,6 @@ Public Class registrasi
 
     Private Sub Button_Save_Click(sender As Object, e As EventArgs) Handles Button_Save.Click
         SavePatient()
-    End Sub
-
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
     End Sub
 
     'load poli data'
@@ -252,9 +270,6 @@ Public Class registrasi
         LoadData()
     End Sub
 
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-
-    End Sub
 
     'tombol cari'
     Private Sub Button_Search_Click(sender As Object, e As EventArgs) Handles Button_Search.Click
@@ -268,9 +283,9 @@ Public Class registrasi
             Dim searchText As String = TextBox_Search.Text.Trim()
 
             ' Define the query with a parameter for the search text
-            Dim query As String = "SELECT * FROM pasien WHERE nama LIKE @search OR alamat LIKE @search"
+            Dim query As String = "SELECT * FROM pasien WHERE nama LIKE @search OR id = @search"
             Dim cmd As New MySqlCommand(query, conn)
-            cmd.Parameters.AddWithValue("@search", "%" & searchText & "%")
+            cmd.Parameters.AddWithValue("@search", searchText)
 
             Dim adapter As New MySqlDataAdapter(cmd)
             Dim table As New DataTable()
@@ -286,8 +301,8 @@ Public Class registrasi
                 conn.Close()
             End If
         End Try
-
     End Sub
+
 
     Private Sub Button_Cancel_Click(sender As Object, e As EventArgs) Handles Button_Cancel.Click
         ClearFormTambah()
@@ -300,8 +315,7 @@ Public Class registrasi
     Private Sub saveEditPasien_Click(sender As Object, e As EventArgs) Handles saveEditPasien.Click
         EditPatient()
     End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
+    Private Sub Button_Reload_Click(sender As Object, e As EventArgs) Handles Button_Reload.Click
+        LoadData()
     End Sub
 End Class

@@ -68,4 +68,5 @@ Public Class queue_form
             Guna2DataGridView1.CommitEdit(DataGridViewDataErrorContexts.Commit)
         End If
     End Sub
+
 End Class
