@@ -6,6 +6,7 @@ Public Class queue_form
     Private Sub queue_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadQueue()
         UpdateNextButtonState()
+        Guna2DataGridView1.DefaultCellStyle.Font = New Font("Segoe UI", 12)
     End Sub
 
     Private Sub LoadQueue()
@@ -13,7 +14,7 @@ Public Class queue_form
             Dim dbConnection As New DatabaseConnection()
             Using conn As MySqlConnection = dbConnection.GetConnection()
                 conn.Open()
-                Dim query As String = "SELECT pasien.id, pasien.nama, poli.nama_poli " &
+                Dim query As String = "SELECT pasien.id, pasien.nama, poli.nama_poli, poli.dokter " &
                                       "FROM pasien " &
                                       "JOIN poli ON pasien.poli_id = poli.id " &
                                       "WHERE pasien.id > @lastProcessedId " &  ' Fetch records with id greater than the last processed id
@@ -42,6 +43,7 @@ Public Class queue_form
                 Label_Antrian.Text = currentRow.Cells("id").Value.ToString()
                 Label_Poli.Text = currentRow.Cells("nama_poli").Value.ToString()
                 Label_NamaPasien.Text = currentRow.Cells("nama").Value.ToString()
+                Label_Dokter.Text = currentRow.Cells("dokter").Value.ToString()
                 lastProcessedId = CInt(currentRow.Cells("id").Value) ' Update the last processed ID
                 Guna2DataGridView1.Rows.RemoveAt(0)
             End If

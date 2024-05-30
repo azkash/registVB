@@ -42,13 +42,16 @@ Partial Class Main
         Me.Label_mcu = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.SlidingPanel.SuspendLayout()
         Me.ImagePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.HeaderSlidingPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.HeaderMainPanel.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SlidingPanel
@@ -72,7 +75,7 @@ Partial Class Main
         Me.Button_Logout.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Button_Logout.FlatAppearance.BorderSize = 0
         Me.Button_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_Logout.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_Logout.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_Logout.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_Logout.Image = Global.tugasbesar1.My.Resources.Resources.icons8_logout_25
         Me.Button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -89,7 +92,7 @@ Partial Class Main
         Me.Button_queue.Dock = System.Windows.Forms.DockStyle.Top
         Me.Button_queue.FlatAppearance.BorderSize = 0
         Me.Button_queue.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_queue.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_queue.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_queue.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_queue.Image = Global.tugasbesar1.My.Resources.Resources.icons8_queue_251
         Me.Button_queue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -106,7 +109,7 @@ Partial Class Main
         Me.Button_mcu.Dock = System.Windows.Forms.DockStyle.Top
         Me.Button_mcu.FlatAppearance.BorderSize = 0
         Me.Button_mcu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_mcu.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_mcu.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_mcu.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_mcu.Image = Global.tugasbesar1.My.Resources.Resources.icons8_checkup_25_1_
         Me.Button_mcu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -115,7 +118,7 @@ Partial Class Main
         Me.Button_mcu.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
         Me.Button_mcu.Size = New System.Drawing.Size(250, 50)
         Me.Button_mcu.TabIndex = 5
-        Me.Button_mcu.Text = "Medical Checkup"
+        Me.Button_mcu.Text = "MedCheck"
         Me.Button_mcu.UseVisualStyleBackColor = True
         '
         'Button_Menu
@@ -123,7 +126,7 @@ Partial Class Main
         Me.Button_Menu.Dock = System.Windows.Forms.DockStyle.Top
         Me.Button_Menu.FlatAppearance.BorderSize = 0
         Me.Button_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_Menu.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_Menu.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_Menu.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_Menu.Image = Global.tugasbesar1.My.Resources.Resources.icons8_registration_25
         Me.Button_Menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -140,7 +143,7 @@ Partial Class Main
         Me.Button_Utama.Dock = System.Windows.Forms.DockStyle.Top
         Me.Button_Utama.FlatAppearance.BorderSize = 0
         Me.Button_Utama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_Utama.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Button_Utama.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_Utama.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_Utama.Image = CType(resources.GetObject("Button_Utama.Image"), System.Drawing.Image)
         Me.Button_Utama.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -149,7 +152,7 @@ Partial Class Main
         Me.Button_Utama.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
         Me.Button_Utama.Size = New System.Drawing.Size(250, 50)
         Me.Button_Utama.TabIndex = 2
-        Me.Button_Utama.Text = "Utama"
+        Me.Button_Utama.Text = "Dashboard"
         Me.Button_Utama.UseVisualStyleBackColor = True
         '
         'ImagePanel
@@ -189,9 +192,9 @@ Partial Class Main
         Me.BtnSlidingMenu.Font = New System.Drawing.Font("Segoe UI", 6.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSlidingMenu.ForeColor = System.Drawing.SystemColors.Info
         Me.BtnSlidingMenu.Image = CType(resources.GetObject("BtnSlidingMenu.Image"), System.Drawing.Image)
-        Me.BtnSlidingMenu.Location = New System.Drawing.Point(200, 0)
+        Me.BtnSlidingMenu.Location = New System.Drawing.Point(160, 0)
         Me.BtnSlidingMenu.Name = "BtnSlidingMenu"
-        Me.BtnSlidingMenu.Size = New System.Drawing.Size(50, 50)
+        Me.BtnSlidingMenu.Size = New System.Drawing.Size(90, 50)
         Me.BtnSlidingMenu.TabIndex = 0
         Me.BtnSlidingMenu.UseVisualStyleBackColor = True
         '
@@ -219,6 +222,7 @@ Partial Class Main
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
         Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
+        Me.Panel3.Controls.Add(Me.PictureBox2)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
@@ -283,6 +287,16 @@ Partial Class Main
         '
         Me.Timer1.Interval = 10
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(32, 28)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(150, 150)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox2.TabIndex = 13
+        Me.PictureBox2.TabStop = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -292,17 +306,20 @@ Partial Class Main
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.SlidingPanel)
         Me.Name = "Main"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Registrasi"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Text = "MAIN MENU - NEXT CENTRAL CLINICS"
         Me.SlidingPanel.ResumeLayout(False)
         Me.ImagePanel.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.HeaderSlidingPanel.ResumeLayout(False)
         Me.MainPanel.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.HeaderMainPanel.ResumeLayout(False)
         Me.HeaderMainPanel.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -325,4 +342,5 @@ Partial Class Main
     Friend WithEvents Button_queue As Button
     Friend WithEvents Label_mcu As Label
     Friend WithEvents queue As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

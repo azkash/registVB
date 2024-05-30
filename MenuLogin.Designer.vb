@@ -22,6 +22,7 @@ Partial Class MenuLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuLogin))
         Me.UsernameTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.PasswordTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LoginButton = New Guna.UI2.WinForms.Guna2Button()
@@ -29,6 +30,9 @@ Partial Class MenuLogin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UsernameTextBox
@@ -43,13 +47,13 @@ Partial Class MenuLogin
         Me.UsernameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernameTextBox.ForeColor = System.Drawing.Color.Black
         Me.UsernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.UsernameTextBox.Location = New System.Drawing.Point(342, 159)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(305, 362)
         Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.UsernameTextBox.PlaceholderText = ""
         Me.UsernameTextBox.SelectedText = ""
-        Me.UsernameTextBox.Size = New System.Drawing.Size(304, 48)
+        Me.UsernameTextBox.Size = New System.Drawing.Size(342, 48)
         Me.UsernameTextBox.TabIndex = 0
         '
         'PasswordTextBox
@@ -64,13 +68,13 @@ Partial Class MenuLogin
         Me.PasswordTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordTextBox.ForeColor = System.Drawing.Color.Black
         Me.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PasswordTextBox.Location = New System.Drawing.Point(342, 235)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(305, 438)
         Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.PasswordTextBox.PlaceholderText = ""
         Me.PasswordTextBox.SelectedText = ""
-        Me.PasswordTextBox.Size = New System.Drawing.Size(304, 48)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(342, 48)
         Me.PasswordTextBox.TabIndex = 1
         '
         'LoginButton
@@ -82,7 +86,7 @@ Partial Class MenuLogin
         Me.LoginButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoginButton.ForeColor = System.Drawing.Color.White
-        Me.LoginButton.Location = New System.Drawing.Point(342, 310)
+        Me.LoginButton.Location = New System.Drawing.Point(343, 513)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(180, 45)
         Me.LoginButton.TabIndex = 5
@@ -97,7 +101,7 @@ Partial Class MenuLogin
         Me.ExitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.ExitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ExitButton.ForeColor = System.Drawing.Color.White
-        Me.ExitButton.Location = New System.Drawing.Point(342, 380)
+        Me.ExitButton.Location = New System.Drawing.Point(343, 583)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(180, 45)
         Me.ExitButton.TabIndex = 6
@@ -107,7 +111,7 @@ Partial Class MenuLogin
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(69, 41)
+        Me.Label1.Location = New System.Drawing.Point(69, 192)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(757, 69)
         Me.Label1.TabIndex = 7
@@ -117,7 +121,7 @@ Partial Class MenuLogin
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(185, 168)
+        Me.Label2.Location = New System.Drawing.Point(154, 371)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(132, 29)
         Me.Label2.TabIndex = 8
@@ -127,17 +131,39 @@ Partial Class MenuLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(185, 245)
+        Me.Label3.Location = New System.Drawing.Point(154, 448)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(128, 29)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Password"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(268, 265)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(330, 54)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "LOGIN MENU"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(364, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(150, 150)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
         'MenuLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(899, 476)
+        Me.ClientSize = New System.Drawing.Size(899, 681)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -146,7 +172,9 @@ Partial Class MenuLogin
         Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.UsernameTextBox)
         Me.Name = "MenuLogin"
-        Me.Text = "MenuLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "LOGIN MENU - NEXT CENTRAL CLINICS"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -159,4 +187,6 @@ Partial Class MenuLogin
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
