@@ -140,4 +140,56 @@ Public Class medical_checkup
         ClearFormEdit()
     End Sub
 
+    Private Sub btn_print_Click(sender As Object, e As EventArgs) Handles btn_print.Click
+        SaveFileDialog1.Filter = "Excel Files (.xlsx)|.xlsx"
+
+        If SaveFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim xlaapp As New Microsoft.Office.Interop.Excel.Application
+            Dim xlworkbook As Microsoft.Office.Interop.Excel.Workbook
+            Dim xlworksheet As Microsoft.Office.Interop.Excel.Worksheet
+            Dim misvalue As Object = System.Reflection.Missing.Value
+
+            Try
+                ' Create a new workbook and worksheet
+                xlworkbook = xlaapp.Workbooks.Add(misvalue)
+                xlworksheet = CType(xlworkbook.Sheets(1), Microsoft.Office.Interop.Excel.Worksheet)
+
+                ' Write column headers
+                For k As Integer = 1 To DataGridView1.Columns.Count
+                    xlworksheet.Cells(1, k) = DataGridView1.Columns(k - 1).HeaderText
+                Next
+
+                ' Write row data
+                For i As Integer = 0 To DataGridView1.RowCount - 2
+                    For j As Integer = 0 To DataGridView1.ColumnCount - 1
+                        xlworksheet.Cells(i + 2, j + 1) = DataGridView1(j, i).Value.ToString()
+                    Next
+                Next
+
+                ' Save the workbook
+                xlworkbook.SaveAs(SaveFileDialog1.FileName)
+                xlworkbook.Close()
+                xlaapp.Quit()
+
+                releaseObject(xlaapp)
+                releaseObject(xlworkbook)
+                releaseObject(xlworksheet)
+
+                MessageBox.Show("Proses Export Berhasil", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Catch ex As Exception
+                MessageBox.Show("Terjadi kesalahan saat mengekspor data: " & ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
+    End Sub
+
+    Private Sub releaseObject(ByVal obj As Object)
+        Try
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(obj)
+            obj = Nothing
+        Catch ex As Exception
+            obj = Nothing
+        Finally
+            GC.Collect()
+        End Try
+    End Sub
 End Class
