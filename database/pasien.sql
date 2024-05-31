@@ -36,8 +36,8 @@ CREATE TABLE `pasien` (
   `alamat` text,
   `keluhan` varchar(200) NOT NULL,
   `poli_id` int DEFAULT NULL,
-  `diagnosa` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `diagnosa` text CHARACTER SET utf8mb4 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pasien`
