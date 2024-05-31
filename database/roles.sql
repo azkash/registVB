@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 28, 2024 at 04:14 PM
+-- Generation Time: May 31, 2024 at 07:26 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -24,34 +24,41 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `antrian`
+-- Table structure for table `roles`
 --
 
-CREATE TABLE `antrian` (
-  `id_antrian` int NOT NULL,
-  `id_poli` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `roles` (
+  `id_role` int NOT NULL,
+  `nama_role` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id_role`, `nama_role`) VALUES
+(1, 'admin'),
+(2, 'user');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `antrian`
+-- Indexes for table `roles`
 --
-ALTER TABLE `antrian`
-  ADD PRIMARY KEY (`id_antrian`),
-  ADD KEY `id_poli` (`id_poli`);
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id_role`);
 
 --
--- Constraints for dumped tables
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Constraints for table `antrian`
+-- AUTO_INCREMENT for table `roles`
 --
-ALTER TABLE `antrian`
-  ADD CONSTRAINT `antrian_ibfk_1` FOREIGN KEY (`id_poli`) REFERENCES `poli` (`id`);
+ALTER TABLE `roles`
+  MODIFY `id_role` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

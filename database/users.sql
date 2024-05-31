@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 29, 2024 at 03:46 PM
+-- Generation Time: May 31, 2024 at 07:25 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -30,15 +30,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `users` (
   `id` int NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `password` varchar(255) NOT NULL,
+  `role_id` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin123');
+INSERT INTO `users` (`id`, `username`, `password`, `role_id`) VALUES
+(1, 'admin', 'admin123', 1),
+(2, 'zulvikar', 'zulvikar123', 1),
+(3, 'azka', 'azka123', 1),
+(4, 'user1', 'password123', 2),
+(5, 'user2', 'password123', 2);
 
 --
 -- Indexes for dumped tables
@@ -48,7 +53,8 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `role_id` (`role_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -58,7 +64,17 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `users`
+--
+ALTER TABLE `users`
+  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id_role`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
