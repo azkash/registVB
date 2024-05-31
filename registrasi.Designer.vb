@@ -23,6 +23,15 @@ Partial Class registrasi
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TabControl = New Guna.UI2.WinForms.Guna2TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button_Reload = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button_Print = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button_Delete = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button_Edit = New Guna.UI2.WinForms.Guna2Button()
+        Me.Button_Search = New Guna.UI2.WinForms.Guna2Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox_Search = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.tempat_lahir = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -63,24 +72,15 @@ Partial Class registrasi
         Me.TextBox4_nama = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox_Search = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button_Search = New Guna.UI2.WinForms.Guna2Button()
-        Me.Button_Edit = New Guna.UI2.WinForms.Guna2Button()
-        Me.Button_Delete = New Guna.UI2.WinForms.Guna2Button()
-        Me.Button_Print = New Guna.UI2.WinForms.Guna2Button()
-        Me.Button_Reload = New Guna.UI2.WinForms.Guna2Button()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabControl.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.GroupBox2_jk.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl
@@ -114,6 +114,144 @@ Partial Class registrasi
         Me.TabControl.TabButtonSize = New System.Drawing.Size(180, 40)
         Me.TabControl.TabIndex = 3
         Me.TabControl.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.Button_Reload)
+        Me.TabPage1.Controls.Add(Me.Button_Print)
+        Me.TabPage1.Controls.Add(Me.Button_Delete)
+        Me.TabPage1.Controls.Add(Me.Button_Edit)
+        Me.TabPage1.Controls.Add(Me.Button_Search)
+        Me.TabPage1.Controls.Add(Me.DataGridView1)
+        Me.TabPage1.Controls.Add(Me.TextBox_Search)
+        Me.TabPage1.Controls.Add(Me.Label2)
+        Me.TabPage1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage1.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1464, 975)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Lihat data"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Button_Reload
+        '
+        Me.Button_Reload.BorderRadius = 6
+        Me.Button_Reload.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Reload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Reload.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Reload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Reload.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Reload.ForeColor = System.Drawing.Color.White
+        Me.Button_Reload.Location = New System.Drawing.Point(624, 39)
+        Me.Button_Reload.Name = "Button_Reload"
+        Me.Button_Reload.Size = New System.Drawing.Size(181, 60)
+        Me.Button_Reload.TabIndex = 7
+        Me.Button_Reload.Text = "Reload Data"
+        '
+        'Button_Print
+        '
+        Me.Button_Print.BorderRadius = 6
+        Me.Button_Print.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Print.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Print.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Print.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Print.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Print.ForeColor = System.Drawing.Color.White
+        Me.Button_Print.Location = New System.Drawing.Point(507, 582)
+        Me.Button_Print.Name = "Button_Print"
+        Me.Button_Print.Size = New System.Drawing.Size(130, 60)
+        Me.Button_Print.TabIndex = 6
+        Me.Button_Print.Text = "Print"
+        '
+        'Button_Delete
+        '
+        Me.Button_Delete.BorderRadius = 6
+        Me.Button_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Delete.FillColor = System.Drawing.Color.Red
+        Me.Button_Delete.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Delete.ForeColor = System.Drawing.Color.White
+        Me.Button_Delete.Location = New System.Drawing.Point(737, 582)
+        Me.Button_Delete.Name = "Button_Delete"
+        Me.Button_Delete.Size = New System.Drawing.Size(130, 60)
+        Me.Button_Delete.TabIndex = 5
+        Me.Button_Delete.Text = "Delete"
+        '
+        'Button_Edit
+        '
+        Me.Button_Edit.BorderRadius = 6
+        Me.Button_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Edit.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button_Edit.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Edit.ForeColor = System.Drawing.Color.White
+        Me.Button_Edit.Location = New System.Drawing.Point(285, 582)
+        Me.Button_Edit.Name = "Button_Edit"
+        Me.Button_Edit.Size = New System.Drawing.Size(130, 60)
+        Me.Button_Edit.TabIndex = 4
+        Me.Button_Edit.Text = "Edit"
+        '
+        'Button_Search
+        '
+        Me.Button_Search.BorderRadius = 6
+        Me.Button_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_Search.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_Search.ForeColor = System.Drawing.Color.White
+        Me.Button_Search.Location = New System.Drawing.Point(489, 39)
+        Me.Button_Search.Name = "Button_Search"
+        Me.Button_Search.Size = New System.Drawing.Size(119, 60)
+        Me.Button_Search.TabIndex = 3
+        Me.Button_Search.Text = "Search"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(22, 129)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1185, 412)
+        Me.DataGridView1.TabIndex = 2
+        '
+        'TextBox_Search
+        '
+        Me.TextBox_Search.BackColor = System.Drawing.Color.White
+        Me.TextBox_Search.BorderRadius = 7
+        Me.TextBox_Search.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBox_Search.DefaultText = ""
+        Me.TextBox_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TextBox_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TextBox_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox_Search.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.TextBox_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox_Search.Location = New System.Drawing.Point(22, 54)
+        Me.TextBox_Search.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.TextBox_Search.Name = "TextBox_Search"
+        Me.TextBox_Search.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TextBox_Search.PlaceholderText = ""
+        Me.TextBox_Search.SelectedText = ""
+        Me.TextBox_Search.Size = New System.Drawing.Size(446, 35)
+        Me.TextBox_Search.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(17, 22)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(111, 28)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Search For"
         '
         'TabPage2
         '
@@ -541,144 +679,6 @@ Partial Class registrasi
         Me.Panel1.Size = New System.Drawing.Size(1652, 983)
         Me.Panel1.TabIndex = 4
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(17, 22)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 28)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Search For"
-        '
-        'TextBox_Search
-        '
-        Me.TextBox_Search.BackColor = System.Drawing.Color.White
-        Me.TextBox_Search.BorderRadius = 7
-        Me.TextBox_Search.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBox_Search.DefaultText = ""
-        Me.TextBox_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.TextBox_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.TextBox_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBox_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.TextBox_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox_Search.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.TextBox_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox_Search.Location = New System.Drawing.Point(22, 54)
-        Me.TextBox_Search.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox_Search.Name = "TextBox_Search"
-        Me.TextBox_Search.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TextBox_Search.PlaceholderText = ""
-        Me.TextBox_Search.SelectedText = ""
-        Me.TextBox_Search.Size = New System.Drawing.Size(446, 35)
-        Me.TextBox_Search.TabIndex = 1
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 129)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1185, 412)
-        Me.DataGridView1.TabIndex = 2
-        '
-        'Button_Search
-        '
-        Me.Button_Search.BorderRadius = 6
-        Me.Button_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button_Search.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_Search.ForeColor = System.Drawing.Color.White
-        Me.Button_Search.Location = New System.Drawing.Point(489, 39)
-        Me.Button_Search.Name = "Button_Search"
-        Me.Button_Search.Size = New System.Drawing.Size(119, 60)
-        Me.Button_Search.TabIndex = 3
-        Me.Button_Search.Text = "Search"
-        '
-        'Button_Edit
-        '
-        Me.Button_Edit.BorderRadius = 6
-        Me.Button_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button_Edit.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button_Edit.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_Edit.ForeColor = System.Drawing.Color.White
-        Me.Button_Edit.Location = New System.Drawing.Point(285, 582)
-        Me.Button_Edit.Name = "Button_Edit"
-        Me.Button_Edit.Size = New System.Drawing.Size(130, 60)
-        Me.Button_Edit.TabIndex = 4
-        Me.Button_Edit.Text = "Edit"
-        '
-        'Button_Delete
-        '
-        Me.Button_Delete.BorderRadius = 6
-        Me.Button_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button_Delete.FillColor = System.Drawing.Color.Red
-        Me.Button_Delete.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_Delete.ForeColor = System.Drawing.Color.White
-        Me.Button_Delete.Location = New System.Drawing.Point(737, 582)
-        Me.Button_Delete.Name = "Button_Delete"
-        Me.Button_Delete.Size = New System.Drawing.Size(130, 60)
-        Me.Button_Delete.TabIndex = 5
-        Me.Button_Delete.Text = "Delete"
-        '
-        'Button_Print
-        '
-        Me.Button_Print.BorderRadius = 6
-        Me.Button_Print.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Print.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Print.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button_Print.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button_Print.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_Print.ForeColor = System.Drawing.Color.White
-        Me.Button_Print.Location = New System.Drawing.Point(507, 582)
-        Me.Button_Print.Name = "Button_Print"
-        Me.Button_Print.Size = New System.Drawing.Size(130, 60)
-        Me.Button_Print.TabIndex = 6
-        Me.Button_Print.Text = "Print"
-        '
-        'Button_Reload
-        '
-        Me.Button_Reload.BorderRadius = 6
-        Me.Button_Reload.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Reload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Reload.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button_Reload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button_Reload.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_Reload.ForeColor = System.Drawing.Color.White
-        Me.Button_Reload.Location = New System.Drawing.Point(624, 39)
-        Me.Button_Reload.Name = "Button_Reload"
-        Me.Button_Reload.Size = New System.Drawing.Size(181, 60)
-        Me.Button_Reload.TabIndex = 7
-        Me.Button_Reload.Text = "Reload Data"
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.Button_Reload)
-        Me.TabPage1.Controls.Add(Me.Button_Print)
-        Me.TabPage1.Controls.Add(Me.Button_Delete)
-        Me.TabPage1.Controls.Add(Me.Button_Edit)
-        Me.TabPage1.Controls.Add(Me.Button_Search)
-        Me.TabPage1.Controls.Add(Me.DataGridView1)
-        Me.TabPage1.Controls.Add(Me.TextBox_Search)
-        Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabPage1.Location = New System.Drawing.Point(184, 4)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1464, 975)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Lihat data"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
         'registrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -688,7 +688,11 @@ Partial Class registrasi
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "registrasi"
         Me.Text = "registrasi"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TabControl.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -699,9 +703,6 @@ Partial Class registrasi
         Me.GroupBox2_jk.ResumeLayout(False)
         Me.GroupBox2_jk.PerformLayout()
         Me.Panel1.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

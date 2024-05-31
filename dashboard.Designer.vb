@@ -28,13 +28,15 @@ Partial Class dashboard
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox_LogedAs = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(894, 252)
+        Me.PictureBox1.Location = New System.Drawing.Point(595, 121)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(150, 150)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -45,7 +47,7 @@ Partial Class dashboard
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(640, 436)
+        Me.Label1.Location = New System.Drawing.Point(635, 796)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(646, 81)
         Me.Label1.TabIndex = 14
@@ -54,8 +56,9 @@ Partial Class dashboard
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(517, 547)
+        Me.Label2.Location = New System.Drawing.Point(515, 877)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(949, 106)
         Me.Label2.TabIndex = 15
@@ -78,7 +81,7 @@ Partial Class dashboard
         Me.TextBox_LogedAs.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox_LogedAs.ForeColor = System.Drawing.Color.Black
         Me.TextBox_LogedAs.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox_LogedAs.Location = New System.Drawing.Point(879, 140)
+        Me.TextBox_LogedAs.Location = New System.Drawing.Point(863, 233)
         Me.TextBox_LogedAs.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox_LogedAs.Name = "TextBox_LogedAs"
         Me.TextBox_LogedAs.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -93,27 +96,43 @@ Partial Class dashboard
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(805, 39)
+        Me.Label3.Location = New System.Drawing.Point(796, 131)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(327, 81)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "WELCOME"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(1172, 132)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(150, 150)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox2.TabIndex = 18
+        Me.PictureBox2.TabStop = False
         '
         'dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox_LogedAs)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "dashboard"
         Me.Text = "dashboard"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -123,4 +142,5 @@ Partial Class dashboard
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox_LogedAs As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

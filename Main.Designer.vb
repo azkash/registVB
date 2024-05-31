@@ -38,7 +38,6 @@ Partial Class Main
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.HeaderMainPanel = New System.Windows.Forms.Panel()
         Me.queue = New System.Windows.Forms.Label()
         Me.Label_mcu = New System.Windows.Forms.Label()
@@ -53,8 +52,6 @@ Partial Class Main
         Me.HeaderSlidingPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.HeaderMainPanel.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,7 +68,7 @@ Partial Class Main
         Me.SlidingPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.SlidingPanel.Location = New System.Drawing.Point(0, 0)
         Me.SlidingPanel.Name = "SlidingPanel"
-        Me.SlidingPanel.Size = New System.Drawing.Size(250, 1033)
+        Me.SlidingPanel.Size = New System.Drawing.Size(250, 921)
         Me.SlidingPanel.TabIndex = 0
         '
         'Button_queue
@@ -100,7 +97,7 @@ Partial Class Main
         Me.Button_Logout.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_Logout.Image = Global.tugasbesar1.My.Resources.Resources.icons8_logout_25
         Me.Button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button_Logout.Location = New System.Drawing.Point(0, 983)
+        Me.Button_Logout.Location = New System.Drawing.Point(0, 871)
         Me.Button_Logout.Name = "Button_Logout"
         Me.Button_Logout.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
         Me.Button_Logout.Size = New System.Drawing.Size(250, 50)
@@ -236,7 +233,7 @@ Partial Class Main
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanel.Location = New System.Drawing.Point(250, 0)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(1652, 1033)
+        Me.MainPanel.Size = New System.Drawing.Size(1362, 921)
         Me.MainPanel.TabIndex = 1
         '
         'Panel1
@@ -246,29 +243,19 @@ Partial Class Main
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 50)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1652, 983)
+        Me.Panel1.Size = New System.Drawing.Size(1362, 871)
         Me.Panel1.TabIndex = 1
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.BackColor = System.Drawing.SystemColors.Control
         Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
-        Me.Panel3.Controls.Add(Me.PictureBox2)
+        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1652, 983)
+        Me.Panel3.Size = New System.Drawing.Size(1362, 871)
         Me.Panel3.TabIndex = 2
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(32, 28)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(150, 150)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 13
-        Me.PictureBox2.TabStop = False
         '
         'HeaderMainPanel
         '
@@ -280,7 +267,7 @@ Partial Class Main
         Me.HeaderMainPanel.Location = New System.Drawing.Point(0, 0)
         Me.HeaderMainPanel.Name = "HeaderMainPanel"
         Me.HeaderMainPanel.Padding = New System.Windows.Forms.Padding(12, 12, 2, 12)
-        Me.HeaderMainPanel.Size = New System.Drawing.Size(1652, 50)
+        Me.HeaderMainPanel.Size = New System.Drawing.Size(1362, 50)
         Me.HeaderMainPanel.TabIndex = 0
         '
         'queue
@@ -370,23 +357,19 @@ Partial Class Main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1902, 1033)
+        Me.ClientSize = New System.Drawing.Size(1612, 921)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.SlidingPanel)
         Me.Name = "Main"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MAIN MENU - NEXT CENTRAL CLINICS"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.SlidingPanel.ResumeLayout(False)
         Me.ImagePanel.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.HeaderSlidingPanel.ResumeLayout(False)
         Me.MainPanel.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.HeaderMainPanel.ResumeLayout(False)
         Me.HeaderMainPanel.PerformLayout()
         Me.ResumeLayout(False)
@@ -410,7 +393,6 @@ Partial Class Main
     Friend WithEvents Button_mcu As Button
     Friend WithEvents Label_mcu As Label
     Friend WithEvents queue As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents MySqlCommand1 As MySqlConnector.MySqlCommand
     Friend WithEvents TextBox_LogedAs As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2ContextMenuStrip1 As Guna.UI2.WinForms.Guna2ContextMenuStrip

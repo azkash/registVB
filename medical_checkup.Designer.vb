@@ -22,6 +22,7 @@ Partial Class medical_checkup
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(medical_checkup))
         Me.textbox_search = New Guna.UI2.WinForms.Guna2TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btn_cari = New Guna.UI2.WinForms.Guna2Button()
@@ -262,6 +263,8 @@ Partial Class medical_checkup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox_id)
@@ -277,9 +280,11 @@ Partial Class medical_checkup
         Me.Controls.Add(Me.btn_cari)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.textbox_search)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "medical_checkup"
         Me.Text = "f"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
