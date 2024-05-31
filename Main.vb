@@ -1,12 +1,16 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Main
+    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox_LogedAs.Text = "" & MenuLogin.LoggedInUser
+    End Sub
     Sub ClearTextMenuList()
         Button_Utama.Text = ""
         Button_Menu.Text = ""
         Button_Logout.Text = ""
         Button_mcu.Text = ""
         Button_queue.Text = ""
+
     End Sub
 
     Sub SetTextMenuList()
@@ -28,7 +32,7 @@ Public Class Main
             ImagePanel.Width += 25
             ImagePanel.Height += 25
 
-            If SlidingPanel.Width >= 200 Then
+            If SlidingPanel.Width >= 230 Then
                 SetTextMenuList()
                 ImagePanel.Visible = True
                 slidingMenu = "close"
@@ -38,7 +42,7 @@ Public Class Main
             SlidingPanel.Width -= 25
             ImagePanel.Width -= 25
             ImagePanel.Height -= 25
-            If SlidingPanel.Width <= 50 Then
+            If SlidingPanel.Width <= 70 Then
                 ClearTextMenuList()
                 ImagePanel.Visible = False
                 slidingMenu = "open"
@@ -87,9 +91,10 @@ Public Class Main
         queue.Visible = True
         Label_mcu.Visible = False
         Label1.Visible = False
-        switchPanel(queue_form)
+        switchPanel(New queue_form())
         Dock = DockStyle.Fill
     End Sub
+
 
 
 

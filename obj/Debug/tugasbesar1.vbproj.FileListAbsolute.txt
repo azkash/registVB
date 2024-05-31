@@ -256,3 +256,4 @@ D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\
 D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\registVB2\registVB\obj\Debug\tugasbesar1.medical_checkup.resources
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.medical_checkup.resources
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.queue_form.resources
+E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.Form_TampilanAntrian.resources

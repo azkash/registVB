@@ -27,6 +27,7 @@ Partial Class queue_form
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.Label_Antrian = New System.Windows.Forms.Label()
         Me.Guna2CircleButton1 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Label_Dokter = New System.Windows.Forms.Label()
         Me.Label_NamaPasien = New System.Windows.Forms.Label()
@@ -38,7 +39,7 @@ Partial Class queue_form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label_Antrian = New System.Windows.Forms.Label()
+        Me.Button_TampilAntrian = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2ShadowPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -109,6 +110,17 @@ Partial Class queue_form
         Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black
         Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(729, 494)
         Me.Guna2ShadowPanel1.TabIndex = 10
+        '
+        'Label_Antrian
+        '
+        Me.Label_Antrian.AutoSize = True
+        Me.Label_Antrian.BackColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label_Antrian.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label_Antrian.Location = New System.Drawing.Point(248, 72)
+        Me.Label_Antrian.Name = "Label_Antrian"
+        Me.Label_Antrian.Size = New System.Drawing.Size(193, 135)
+        Me.Label_Antrian.TabIndex = 25
+        Me.Label_Antrian.Text = "00"
         '
         'Guna2CircleButton1
         '
@@ -203,9 +215,9 @@ Partial Class queue_form
         Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(328, 143)
+        Me.Guna2Button1.Location = New System.Drawing.Point(289, 134)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(388, 60)
+        Me.Guna2Button1.Size = New System.Drawing.Size(466, 75)
         Me.Guna2Button1.TabIndex = 21
         '
         'Label4
@@ -228,9 +240,9 @@ Partial Class queue_form
         Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(1152, 143)
+        Me.Guna2Button2.Location = New System.Drawing.Point(1120, 134)
         Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(385, 60)
+        Me.Guna2Button2.Size = New System.Drawing.Size(455, 75)
         Me.Guna2Button2.TabIndex = 23
         '
         'Label1
@@ -244,22 +256,27 @@ Partial Class queue_form
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "ANTRIAN PASIEN"
         '
-        'Label_Antrian
+        'Button_TampilAntrian
         '
-        Me.Label_Antrian.AutoSize = True
-        Me.Label_Antrian.BackColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label_Antrian.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label_Antrian.Location = New System.Drawing.Point(248, 72)
-        Me.Label_Antrian.Name = "Label_Antrian"
-        Me.Label_Antrian.Size = New System.Drawing.Size(193, 135)
-        Me.Label_Antrian.TabIndex = 25
-        Me.Label_Antrian.Text = "00"
+        Me.Button_TampilAntrian.BorderRadius = 10
+        Me.Button_TampilAntrian.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Button_TampilAntrian.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Button_TampilAntrian.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button_TampilAntrian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Button_TampilAntrian.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_TampilAntrian.ForeColor = System.Drawing.Color.White
+        Me.Button_TampilAntrian.Location = New System.Drawing.Point(1368, 757)
+        Me.Button_TampilAntrian.Name = "Button_TampilAntrian"
+        Me.Button_TampilAntrian.Size = New System.Drawing.Size(292, 81)
+        Me.Button_TampilAntrian.TabIndex = 25
+        Me.Button_TampilAntrian.Text = "USER QUEUE"
         '
         'queue_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
+        Me.Controls.Add(Me.Button_TampilAntrian)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.Label4)
@@ -293,4 +310,5 @@ Partial Class queue_form
     Friend WithEvents Guna2CircleButton1 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Label1 As Label
     Friend WithEvents Label_Antrian As Label
+    Friend WithEvents Button_TampilAntrian As Guna.UI2.WinForms.Guna2Button
 End Class

@@ -1,21 +1,13 @@
 ﻿Imports MySql.Data.MySqlClient
-
-Public Class queue_form
+Public Class Form_TampilanAntrian
     Private lastProcessedId As Integer = -1 ' Variable to keep track of the last processed ID
-    ' Deklarasikan sebuah instance dari Form_TampilanAntrian
-    Private formAntrian As Form_TampilanAntrian
-    Public Sub UpdateTampilanAntrian(id As String, namaPoli As String, namaPasien As String, dokter As String)
-        If formAntrian IsNot Nothing Then
-            formAntrian.UpdateAntrian(id, namaPoli, namaPasien, dokter)
-        End If
-    End Sub
+    Private formAntrian As queue_form
 
-    Private Sub queue_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Form_TampilanAntrian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadQueue()
         UpdateNextButtonState()
         Guna2DataGridView1.DefaultCellStyle.Font = New Font("Segoe UI", 12)
     End Sub
-
     Private Sub LoadQueue()
         Try
             Dim dbConnection As New DatabaseConnection()
@@ -40,10 +32,28 @@ Public Class queue_form
         End Try
         UpdateNextButtonState()
     End Sub
-    Public Sub UpdateAntrian()
-        ' Lakukan sesuatu untuk memperbarui informasi antrian di form ini
-        ' Contoh:
+    Private Sub UpdateNextButtonState()
+        Button_Next.Enabled = Guna2DataGridView1.Rows.Count > 0
+    End Sub
+    Private Sub Button_RefreshAntrian_Click(sender As Object, e As EventArgs) Handles Button_RefreshAntrian.Click
         LoadQueue()
+    End Sub
+    Public Sub UpdateAntrian(id As String, namaPoli As String, namaPasien As String, dokter As String)
+        ' Lakukan sesuatu dengan informasi antrian yang diterima
+        ' Contoh:
+        Label_Antrian.Text = id
+        Label_Poli.Text = namaPoli
+        Label_NamaPasien.Text = namaPasien
+        Label_Dokter.Text = dokter
+        LoadQueue()
+    End Sub
+    Public Sub SetFormAntrian(form As Form_TampilanAntrian)
+        formAntrian = queue_form
+    End Sub
+    Public Sub UpdateTampilanAntrian(id As String, namaPoli As String, namaPasien As String, dokter As String)
+        If formAntrian IsNot Nothing Then
+            formAntrian.UpdateAntrian()
+        End If
     End Sub
 
     Private Sub Button_Next_Click(sender As Object, e As EventArgs) Handles Button_Next.Click
@@ -75,22 +85,7 @@ Public Class queue_form
         UpdateNextButtonState()
 
         ' Kirim informasi antrian ke Form_TampilanAntrian
-        If formAntrian IsNot Nothing Then
-            formAntrian.UpdateAntrian(Label_Antrian.Text, Label_Poli.Text, Label_NamaPasien.Text, Label_Dokter.Text)
-        End If
-    End Sub
-
-    ' Method ini akan dipanggil saat form Form_TampilanAntrian ditutup
-    Public Sub SetFormAntrian(form As Form_TampilanAntrian)
-        formAntrian = form
-    End Sub
-
-    Private Sub Button_RefreshAntrian_Click(sender As Object, e As EventArgs) Handles Button_RefreshAntrian.Click
-        LoadQueue()
-    End Sub
-
-    Private Sub UpdateNextButtonState()
-        Button_Next.Enabled = Guna2DataGridView1.Rows.Count > 0
+        UpdateTampilanAntrian(Label_Antrian.Text, Label_Poli.Text, Label_NamaPasien.Text, Label_Dokter.Text)
     End Sub
 
     Private Sub CommitDataGridViewEdits()
@@ -102,18 +97,4 @@ Public Class queue_form
             Guna2DataGridView1.CommitEdit(DataGridViewDataErrorContexts.Commit)
         End If
     End Sub
-    Private Sub Button_TampilAntrian_Click(sender As Object, e As EventArgs) Handles Button_TampilAntrian.Click
-        ' Buat instance dari form Form_TampilanAntrian
-        Dim formAntrian As New Form_TampilanAntrian()
-
-        ' Atur properti form jika diperlukan
-        formAntrian.StartPosition = FormStartPosition.CenterScreen
-
-        ' Simpan referensi ke Form_TampilanAntrian
-        SetFormAntrian(formAntrian)
-
-        ' Tampilkan form sebagai popup
-        formAntrian.Show() ' Atau gunakan formAntrian.ShowDialog() jika ingin modal dialog
-    End Sub
-
 End Class

@@ -154,6 +154,12 @@
     <Compile Include="dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_TampilanAntrian.Designer.vb">
+      <DependentUpon>Form_TampilanAntrian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TampilanAntrian.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TampilanAntrian.resx">
+      <DependentUpon>Form_TampilanAntrian.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>

@@ -25,24 +25,28 @@ Partial Class Main
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.SlidingPanel = New System.Windows.Forms.Panel()
-        Me.Button_Logout = New System.Windows.Forms.Button()
         Me.Button_queue = New System.Windows.Forms.Button()
+        Me.Button_Logout = New System.Windows.Forms.Button()
         Me.Button_mcu = New System.Windows.Forms.Button()
         Me.Button_Menu = New System.Windows.Forms.Button()
         Me.Button_Utama = New System.Windows.Forms.Button()
         Me.ImagePanel = New System.Windows.Forms.Panel()
+        Me.TextBox_LogedAs = New Guna.UI2.WinForms.Guna2TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.HeaderSlidingPanel = New System.Windows.Forms.Panel()
         Me.BtnSlidingMenu = New System.Windows.Forms.Button()
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.HeaderMainPanel = New System.Windows.Forms.Panel()
         Me.queue = New System.Windows.Forms.Label()
         Me.Label_mcu = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.MySqlCommand1 = New MySqlConnector.MySqlCommand()
+        Me.Guna2ContextMenuStrip1 = New Guna.UI2.WinForms.Guna2ContextMenuStrip()
+        Me.Guna2ContextMenuStrip2 = New Guna.UI2.WinForms.Guna2ContextMenuStrip()
         Me.SlidingPanel.SuspendLayout()
         Me.ImagePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,15 +54,15 @@ Partial Class Main
         Me.MainPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.HeaderMainPanel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HeaderMainPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'SlidingPanel
         '
         Me.SlidingPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.SlidingPanel.Controls.Add(Me.Button_Logout)
         Me.SlidingPanel.Controls.Add(Me.Button_queue)
+        Me.SlidingPanel.Controls.Add(Me.Button_Logout)
         Me.SlidingPanel.Controls.Add(Me.Button_mcu)
         Me.SlidingPanel.Controls.Add(Me.Button_Menu)
         Me.SlidingPanel.Controls.Add(Me.Button_Utama)
@@ -69,6 +73,23 @@ Partial Class Main
         Me.SlidingPanel.Name = "SlidingPanel"
         Me.SlidingPanel.Size = New System.Drawing.Size(250, 1033)
         Me.SlidingPanel.TabIndex = 0
+        '
+        'Button_queue
+        '
+        Me.Button_queue.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button_queue.FlatAppearance.BorderSize = 0
+        Me.Button_queue.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_queue.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_queue.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Button_queue.Image = Global.tugasbesar1.My.Resources.Resources.icons8_queue_251
+        Me.Button_queue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button_queue.Location = New System.Drawing.Point(0, 476)
+        Me.Button_queue.Name = "Button_queue"
+        Me.Button_queue.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
+        Me.Button_queue.Size = New System.Drawing.Size(250, 50)
+        Me.Button_queue.TabIndex = 7
+        Me.Button_queue.Text = "Queue"
+        Me.Button_queue.UseVisualStyleBackColor = True
         '
         'Button_Logout
         '
@@ -87,23 +108,6 @@ Partial Class Main
         Me.Button_Logout.Text = "Log out"
         Me.Button_Logout.UseVisualStyleBackColor = True
         '
-        'Button_queue
-        '
-        Me.Button_queue.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button_queue.FlatAppearance.BorderSize = 0
-        Me.Button_queue.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button_queue.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_queue.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button_queue.Image = Global.tugasbesar1.My.Resources.Resources.icons8_queue_251
-        Me.Button_queue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button_queue.Location = New System.Drawing.Point(0, 450)
-        Me.Button_queue.Name = "Button_queue"
-        Me.Button_queue.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.Button_queue.Size = New System.Drawing.Size(250, 50)
-        Me.Button_queue.TabIndex = 6
-        Me.Button_queue.Text = "Queue"
-        Me.Button_queue.UseVisualStyleBackColor = True
-        '
         'Button_mcu
         '
         Me.Button_mcu.Dock = System.Windows.Forms.DockStyle.Top
@@ -113,7 +117,7 @@ Partial Class Main
         Me.Button_mcu.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_mcu.Image = Global.tugasbesar1.My.Resources.Resources.icons8_checkup_25_1_
         Me.Button_mcu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button_mcu.Location = New System.Drawing.Point(0, 400)
+        Me.Button_mcu.Location = New System.Drawing.Point(0, 426)
         Me.Button_mcu.Name = "Button_mcu"
         Me.Button_mcu.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
         Me.Button_mcu.Size = New System.Drawing.Size(250, 50)
@@ -130,7 +134,7 @@ Partial Class Main
         Me.Button_Menu.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_Menu.Image = Global.tugasbesar1.My.Resources.Resources.icons8_registration_25
         Me.Button_Menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button_Menu.Location = New System.Drawing.Point(0, 350)
+        Me.Button_Menu.Location = New System.Drawing.Point(0, 376)
         Me.Button_Menu.Name = "Button_Menu"
         Me.Button_Menu.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
         Me.Button_Menu.Size = New System.Drawing.Size(250, 50)
@@ -147,7 +151,7 @@ Partial Class Main
         Me.Button_Utama.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Button_Utama.Image = CType(resources.GetObject("Button_Utama.Image"), System.Drawing.Image)
         Me.Button_Utama.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button_Utama.Location = New System.Drawing.Point(0, 300)
+        Me.Button_Utama.Location = New System.Drawing.Point(0, 326)
         Me.Button_Utama.Name = "Button_Utama"
         Me.Button_Utama.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
         Me.Button_Utama.Size = New System.Drawing.Size(250, 50)
@@ -157,13 +161,40 @@ Partial Class Main
         '
         'ImagePanel
         '
+        Me.ImagePanel.Controls.Add(Me.TextBox_LogedAs)
         Me.ImagePanel.Controls.Add(Me.PictureBox1)
         Me.ImagePanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.ImagePanel.Location = New System.Drawing.Point(0, 50)
         Me.ImagePanel.Name = "ImagePanel"
         Me.ImagePanel.Padding = New System.Windows.Forms.Padding(75)
-        Me.ImagePanel.Size = New System.Drawing.Size(250, 250)
+        Me.ImagePanel.Size = New System.Drawing.Size(250, 276)
         Me.ImagePanel.TabIndex = 1
+        '
+        'TextBox_LogedAs
+        '
+        Me.TextBox_LogedAs.Animated = True
+        Me.TextBox_LogedAs.AutoRoundedCorners = True
+        Me.TextBox_LogedAs.BorderRadius = 23
+        Me.TextBox_LogedAs.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TextBox_LogedAs.DefaultText = ""
+        Me.TextBox_LogedAs.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TextBox_LogedAs.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TextBox_LogedAs.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox_LogedAs.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TextBox_LogedAs.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox_LogedAs.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox_LogedAs.ForeColor = System.Drawing.Color.Black
+        Me.TextBox_LogedAs.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBox_LogedAs.Location = New System.Drawing.Point(33, 186)
+        Me.TextBox_LogedAs.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox_LogedAs.Name = "TextBox_LogedAs"
+        Me.TextBox_LogedAs.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TextBox_LogedAs.PlaceholderText = ""
+        Me.TextBox_LogedAs.ReadOnly = True
+        Me.TextBox_LogedAs.SelectedText = ""
+        Me.TextBox_LogedAs.Size = New System.Drawing.Size(183, 49)
+        Me.TextBox_LogedAs.TabIndex = 1
+        Me.TextBox_LogedAs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox1
         '
@@ -229,6 +260,16 @@ Partial Class Main
         Me.Panel3.Size = New System.Drawing.Size(1652, 983)
         Me.Panel3.TabIndex = 2
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(32, 28)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(150, 150)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox2.TabIndex = 13
+        Me.PictureBox2.TabStop = False
+        '
         'HeaderMainPanel
         '
         Me.HeaderMainPanel.BackColor = System.Drawing.Color.LightSeaGreen
@@ -287,15 +328,42 @@ Partial Class Main
         '
         Me.Timer1.Interval = 10
         '
-        'PictureBox2
+        'MySqlCommand1
         '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(32, 28)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(150, 150)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 13
-        Me.PictureBox2.TabStop = False
+        Me.MySqlCommand1.CommandTimeout = 0
+        Me.MySqlCommand1.Connection = Nothing
+        Me.MySqlCommand1.Transaction = Nothing
+        Me.MySqlCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None
+        '
+        'Guna2ContextMenuStrip1
+        '
+        Me.Guna2ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.Guna2ContextMenuStrip1.Name = "Guna2ContextMenuStrip1"
+        Me.Guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro
+        Me.Guna2ContextMenuStrip1.RenderStyle.ColorTable = Nothing
+        Me.Guna2ContextMenuStrip1.RenderStyle.RoundedEdges = True
+        Me.Guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White
+        Me.Guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White
+        Me.Guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro
+        Me.Guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
+        Me.Guna2ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'Guna2ContextMenuStrip2
+        '
+        Me.Guna2ContextMenuStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.Guna2ContextMenuStrip2.Name = "Guna2ContextMenuStrip2"
+        Me.Guna2ContextMenuStrip2.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(CType(CType(151, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ContextMenuStrip2.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro
+        Me.Guna2ContextMenuStrip2.RenderStyle.ColorTable = Nothing
+        Me.Guna2ContextMenuStrip2.RenderStyle.RoundedEdges = True
+        Me.Guna2ContextMenuStrip2.RenderStyle.SelectionArrowColor = System.Drawing.Color.White
+        Me.Guna2ContextMenuStrip2.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ContextMenuStrip2.RenderStyle.SelectionForeColor = System.Drawing.Color.White
+        Me.Guna2ContextMenuStrip2.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro
+        Me.Guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
+        Me.Guna2ContextMenuStrip2.Size = New System.Drawing.Size(61, 4)
         '
         'Main
         '
@@ -309,6 +377,7 @@ Partial Class Main
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MAIN MENU - NEXT CENTRAL CLINICS"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.SlidingPanel.ResumeLayout(False)
         Me.ImagePanel.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -317,9 +386,9 @@ Partial Class Main
         Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.HeaderMainPanel.ResumeLayout(False)
         Me.HeaderMainPanel.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -339,8 +408,12 @@ Partial Class Main
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Button_mcu As Button
-    Friend WithEvents Button_queue As Button
     Friend WithEvents Label_mcu As Label
     Friend WithEvents queue As Label
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents MySqlCommand1 As MySqlConnector.MySqlCommand
+    Friend WithEvents TextBox_LogedAs As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2ContextMenuStrip1 As Guna.UI2.WinForms.Guna2ContextMenuStrip
+    Friend WithEvents Guna2ContextMenuStrip2 As Guna.UI2.WinForms.Guna2ContextMenuStrip
+    Friend WithEvents Button_queue As Button
 End Class

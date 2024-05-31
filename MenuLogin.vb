@@ -1,16 +1,27 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class MenuLogin
+    Public Shared LoggedInUser As String
     Private Sub MenuLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PasswordTextBox.PasswordChar = "*"c
     End Sub
+
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
         Dim username As String = UsernameTextBox.Text
         Dim password As String = PasswordTextBox.Text
 
         If AuthenticateUser(username, password) Then
+            LoggedInUser = username ' Simpan nama pengguna yang login
             MessageBox.Show("Login berhasil!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Main.Show() ' Menampilkan form utama
+
+            ' Cek username untuk menentukan form yang akan ditampilkan
+            If username.ToLower() = "admin" Then
+                Main.Show() ' Menampilkan form utama
+                Form_TampilanAntrian.Show() ' Menampilkan form tampilan antrian
+            Else
+                Form_TampilanAntrian.Show() ' Menampilkan form tampilan antrian
+            End If
+
             Me.Hide() ' Menyembunyikan form login
         Else
             MessageBox.Show("Username atau password salah!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -42,5 +53,4 @@ Public Class MenuLogin
 
         Return isAuthenticated
     End Function
-
 End Class
