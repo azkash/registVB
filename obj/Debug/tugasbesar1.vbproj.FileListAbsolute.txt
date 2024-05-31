@@ -258,3 +258,5 @@ E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tu
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.queue_form.resources
 E:\_POLINES\POLINES SMT 2\Pemrograman Visual (SMT 2)\TUBES\registVB\obj\Debug\tugasbesar1.Form_TampilanAntrian.resources
 D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\registVB2\registVB\obj\Debug\tugasbesar1.Form_TampilanAntrian.resources
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\registVB2\registVB\obj\Debug\tugasbesar1.vbproj.ResolveComReference.cache
+D:\Polines\A2 - Matkul Semester 2\Pemrograman Visual(Sirli Fahrihah)\tugasBesar\registVB2\registVB\obj\Debug\tugasbesar1.report_pasien.resources

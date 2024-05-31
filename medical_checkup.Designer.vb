@@ -36,6 +36,7 @@ Partial Class medical_checkup
         Me.btn_print = New Guna.UI2.WinForms.Guna2Button()
         Me.TextBox_id = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -300,4 +301,5 @@ Partial Class medical_checkup
     Friend WithEvents btn_print As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents TextBox_id As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class
