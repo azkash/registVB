@@ -60,9 +60,9 @@ Public Class medical_checkup
             Dim searchText As String = textbox_search.Text.Trim()
 
             ' Define the query with a parameter for the search text
-            Dim query As String = "SELECT id, nama, keluhan, diagnosa pasien WHERE nama LIKE @search OR id LIKE @search"
+            Dim query As String = "SELECT id, nama, keluhan, diagnosa FROM pasien WHERE nama LIKE @search OR id LIKE @search"
             Dim cmd As New MySqlCommand(query, conn)
-            cmd.Parameters.AddWithValue("@search", "%" & searchText & "%")
+            cmd.Parameters.AddWithValue("@search", searchText)
 
             Dim adapter As New MySqlDataAdapter(cmd)
             Dim table As New DataTable()

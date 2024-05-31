@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|e:\\_polines\\polines smt 2\\pemrograman visual (smt 2)\\tubes\\registvb\\medical_checkup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:medical_checkup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|e:\\_polines\\polines smt 2\\pemrograman visual (smt 2)\\tubes\\registvb\\medical_checkup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:medical_checkup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\registrasi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:registrasi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|e:\\_polines\\polines smt 2\\pemrograman visual (smt 2)\\tubes\\registvb\\registrasi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:registrasi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\queue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -23,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|e:\\_polines\\polines smt 2\\pemrograman visual (smt 2)\\tubes\\registvb\\form_tampilanantrian.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\form_tampilanantrian.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:form_tampilanantrian.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
@@ -51,7 +55,7 @@
       "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:form_tampilanantrian.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|e:\\_polines\\polines smt 2\\pemrograman visual (smt 2)\\tubes\\registvb\\report_pasien.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\report_pasien.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{B2D4C7D6-F4B5-4F7C-9525-4819993A37D9}|tugasbesar1.vbproj|solutionrelative:report_pasien.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
@@ -66,8 +70,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "medical_checkup.vb",
+              "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\medical_checkup.vb",
+              "RelativeDocumentMoniker": "medical_checkup.vb",
+              "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\medical_checkup.vb",
+              "RelativeToolTip": "medical_checkup.vb",
+              "ViewState": "AQIAADEAAAAAAAAAAAAkwEsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-31T07:46:31.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "medical_checkup.vb [Design]",
+              "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\medical_checkup.vb",
+              "RelativeDocumentMoniker": "medical_checkup.vb",
+              "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\medical_checkup.vb [Design]",
+              "RelativeToolTip": "medical_checkup.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-31T07:37:22.603Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -82,79 +111,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Main.vb [Design]",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Main.vb",
               "RelativeDocumentMoniker": "Main.vb",
               "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Main.vb [Design]",
               "RelativeToolTip": "Main.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-29T17:26:30.411Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-29T17:26:30.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "dashboard.vb [Design]",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\dashboard.vb",
               "RelativeDocumentMoniker": "dashboard.vb",
               "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\dashboard.vb [Design]",
               "RelativeToolTip": "dashboard.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-30T20:34:01.524Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T20:34:01.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "queue.vb [Design]",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\queue.vb",
               "RelativeDocumentMoniker": "queue.vb",
               "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\queue.vb [Design]",
               "RelativeToolTip": "queue.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-30T15:41:16.245Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T15:41:16.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "medical_checkup.vb [Design]",
-              "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\medical_checkup.vb",
-              "RelativeDocumentMoniker": "medical_checkup.vb",
-              "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\medical_checkup.vb [Design]",
-              "RelativeToolTip": "medical_checkup.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-31T06:33:23.497Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Form_TampilanAntrian.vb [Design]",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Form_TampilanAntrian.vb",
               "RelativeDocumentMoniker": "Form_TampilanAntrian.vb",
               "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Form_TampilanAntrian.vb [Design]",
               "RelativeToolTip": "Form_TampilanAntrian.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-31T07:10:21.02Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-31T07:10:21.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MenuLogin.vb [Design]",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\MenuLogin.vb",
               "RelativeDocumentMoniker": "MenuLogin.vb",
               "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\MenuLogin.vb [Design]",
               "RelativeToolTip": "MenuLogin.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-30T18:07:32.502Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T18:07:32.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "queue.vb",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\queue.vb",
               "RelativeDocumentMoniker": "queue.vb",
@@ -162,12 +174,11 @@
               "RelativeToolTip": "queue.vb",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-30T15:39:05.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T15:39:05.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "dashboard.vb",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\dashboard.vb",
               "RelativeDocumentMoniker": "dashboard.vb",
@@ -175,12 +186,11 @@
               "RelativeToolTip": "dashboard.vb",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-31T01:18:08.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T01:18:08.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MenuLogin.vb",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\MenuLogin.vb",
               "RelativeDocumentMoniker": "MenuLogin.vb",
@@ -188,12 +198,11 @@
               "RelativeToolTip": "MenuLogin.vb",
               "ViewState": "AQIAAB0AAAAAAAAAAAAowD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-30T18:08:53.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T18:08:53.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Main.vb",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Main.vb",
               "RelativeDocumentMoniker": "Main.vb",
@@ -201,24 +210,22 @@
               "RelativeToolTip": "Main.vb",
               "ViewState": "AQIAAFMAAAAAAAAAAAAlwGIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-29T17:26:53.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T17:26:53.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "report_pasien.vb [Design]",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\report_pasien.vb",
               "RelativeDocumentMoniker": "report_pasien.vb",
               "ToolTip": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\report_pasien.vb [Design]",
               "RelativeToolTip": "report_pasien.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-31T04:15:44.833Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-31T04:15:44.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Form_TampilanAntrian.vb",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\Form_TampilanAntrian.vb",
               "RelativeDocumentMoniker": "Form_TampilanAntrian.vb",
@@ -226,12 +233,11 @@
               "RelativeToolTip": "Form_TampilanAntrian.vb",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-31T01:32:56.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T01:32:56.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "registrasi.vb",
               "DocumentMoniker": "E:\\_POLINES\\POLINES SMT 2\\Pemrograman Visual (SMT 2)\\TUBES\\registVB\\registrasi.vb",
               "RelativeDocumentMoniker": "registrasi.vb",
