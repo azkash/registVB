@@ -25,10 +25,6 @@ Partial Class registrasi
         Me.TabControl = New Guna.UI2.WinForms.Guna2TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button_Reload = New Guna.UI2.WinForms.Guna2Button()
-<<<<<<< HEAD
-        Me.Button_Print = New Guna.UI2.WinForms.Guna2Button()
-=======
->>>>>>> 8c024332e26fe59837e819181eb138bec1396fa2
         Me.Button_Delete = New Guna.UI2.WinForms.Guna2Button()
         Me.Button_Edit = New Guna.UI2.WinForms.Guna2Button()
         Me.Button_Search = New Guna.UI2.WinForms.Guna2Button()
@@ -121,10 +117,6 @@ Partial Class registrasi
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.Button_Reload)
-<<<<<<< HEAD
-        Me.TabPage1.Controls.Add(Me.Button_Print)
-=======
->>>>>>> 8c024332e26fe59837e819181eb138bec1396fa2
         Me.TabPage1.Controls.Add(Me.Button_Delete)
         Me.TabPage1.Controls.Add(Me.Button_Edit)
         Me.TabPage1.Controls.Add(Me.Button_Search)
@@ -155,24 +147,6 @@ Partial Class registrasi
         Me.Button_Reload.TabIndex = 7
         Me.Button_Reload.Text = "Reload Data"
         '
-<<<<<<< HEAD
-        'Button_Print
-        '
-        Me.Button_Print.BorderRadius = 6
-        Me.Button_Print.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Print.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Button_Print.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button_Print.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button_Print.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_Print.ForeColor = System.Drawing.Color.White
-        Me.Button_Print.Location = New System.Drawing.Point(507, 582)
-        Me.Button_Print.Name = "Button_Print"
-        Me.Button_Print.Size = New System.Drawing.Size(130, 60)
-        Me.Button_Print.TabIndex = 6
-        Me.Button_Print.Text = "Print"
-        '
-=======
->>>>>>> 8c024332e26fe59837e819181eb138bec1396fa2
         'Button_Delete
         '
         Me.Button_Delete.BorderRadius = 6
@@ -183,11 +157,8 @@ Partial Class registrasi
         Me.Button_Delete.FillColor = System.Drawing.Color.Red
         Me.Button_Delete.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_Delete.ForeColor = System.Drawing.Color.White
-<<<<<<< HEAD
-        Me.Button_Delete.Location = New System.Drawing.Point(737, 582)
-=======
+
         Me.Button_Delete.Location = New System.Drawing.Point(1077, 565)
->>>>>>> 8c024332e26fe59837e819181eb138bec1396fa2
         Me.Button_Delete.Name = "Button_Delete"
         Me.Button_Delete.Size = New System.Drawing.Size(130, 60)
         Me.Button_Delete.TabIndex = 5
@@ -203,11 +174,7 @@ Partial Class registrasi
         Me.Button_Edit.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button_Edit.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_Edit.ForeColor = System.Drawing.Color.White
-<<<<<<< HEAD
-        Me.Button_Edit.Location = New System.Drawing.Point(285, 582)
-=======
         Me.Button_Edit.Location = New System.Drawing.Point(922, 565)
->>>>>>> 8c024332e26fe59837e819181eb138bec1396fa2
         Me.Button_Edit.Name = "Button_Edit"
         Me.Button_Edit.Size = New System.Drawing.Size(130, 60)
         Me.Button_Edit.TabIndex = 4

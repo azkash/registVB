@@ -97,4 +97,5 @@ Public Class Form_TampilanAntrian
             Guna2DataGridView1.CommitEdit(DataGridViewDataErrorContexts.Commit)
         End If
     End Sub
+
 End Class

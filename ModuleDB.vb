@@ -2,7 +2,7 @@
 Imports MySql.Data.MySqlClient
 
 Public Class DatabaseConnection
-    Private connString As String = "server=localhost;userid=root;password=;database=datapasien"
+    Private connString As String = "server=localhost;userid=root;password=root;database=datapasien"
 
     Public Function GetConnection() As MySqlConnection
         Return New MySqlConnection(connString)

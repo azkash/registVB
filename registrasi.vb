@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class registrasi
-    Private connString As String = "server=localhost;userid=root;password=;database=datapasien;Convert Zero Datetime=True"
+    Private connString As String = "server=localhost;userid=root;password=root;database=datapasien;Convert Zero Datetime=True"
     Private conn As New MySqlConnection(connString)
     Private Sub registrasi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadPoliData()

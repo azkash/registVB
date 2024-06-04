@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class medical_checkup
-    Private connString As String = "server=localhost;userid=root;password=;database=datapasien;Convert Zero Datetime=True"
+    Private connString As String = "server=localhost;userid=root;password=root;database=datapasien;Convert Zero Datetime=True"
     Private conn As New MySqlConnection(connString)
     Private Sub medical_checkup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Kode untuk memuat data dan mengatur lebar kolom DataGridView
