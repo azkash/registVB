@@ -80,7 +80,7 @@ Public Class registrasi
     End Sub
 
 
-    Private Sub Button_Print_Click(sender As Object, e As EventArgs) Handles Button_Print.Click
+    Private Sub Button_Print_Click(sender As Object, e As EventArgs) 
         ' Implement print functionality
     End Sub
 
