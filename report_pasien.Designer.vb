@@ -52,4 +52,5 @@ Partial Class report_pasien
 
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents CrystalReport11 As CrystalReport1
+    'Friend WithEvents CrystalReport11 As CrystalReport1
 End Class

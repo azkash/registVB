@@ -227,7 +227,7 @@ Partial Class queue_form
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(373, 157)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(308, 32)
+        Me.Label4.Size = New System.Drawing.Size(309, 32)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "SEDANG DIPANGGIL"
         '
@@ -252,7 +252,7 @@ Partial Class queue_form
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(1217, 157)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(260, 32)
+        Me.Label1.Size = New System.Drawing.Size(261, 32)
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "ANTRIAN PASIEN"
         '
@@ -289,6 +289,7 @@ Partial Class queue_form
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "queue_form"
         Me.Text = "/"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2ShadowPanel1.ResumeLayout(False)
         Me.Guna2ShadowPanel1.PerformLayout()
